@@ -71,9 +71,9 @@
     <!--    Stylesheets-->
     <!-- ===============================================-->
     <link rel="stylesheet" href="assets/css/bootstrap.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+     <link rel="stylesheet" href="assets/css/style.css">
+     <link rel="stylesheet" href="assets/css/fonts.css">
     <link href="assets/css/theme.css" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/css/font.css">
 
 </head>
 
@@ -109,96 +109,271 @@
         </nav>
     </main>
 
-    <!--Contact Section Content-->
-    <section class="contact-section section-lg bg-light text-center">
-        <div class="container-fluid">
-            <h3 style="color: black">CONTACT US</h3>
-            <div class="divider divider-decorate"></div>
-            <p>
-                Ready to explore the world with ease? Reach out to
-                <b>OnCall Tours and Travels Pvt. Ltd.</b> today. Our team is eager
-                to assist you with customized travel solutions that ensure
-                unforgettable experiences and seamless journeys. Let's start a
-                conversation and make your travel dreams a reality.
-            </p>
-
-            <div class="row">
-                <!-- First Column: Contact Information -->
-                <div class="col-md-6 d-flex align-items-center justify-content-center">
-                    <div class="p-4">
-                        <div class="info-wrap">
-                            <div class="info-item d-flex">
-                                <i class="mdi mdi-map-marker flex-shrink-0"></i>
-                                <div style="text-align: left">
-                                    <h4>Address</h4>
-                                    <p>New Baneshwor-10, Kathmandu 44600</p>
-                                </div>
-                            </div>
-                            <div class="info-item d-flex">
-                                <i class="mdi mdi-phone flex-shrink-0"></i>
-                                <div style="text-align: left">
-                                    <h4>Call Us</h4>
-                                    <p>+977-9763200761</p>
-                                </div>
-                            </div>
-                            <div class="info-item d-flex">
-                                <i class="mdi mdi-email flex-shrink-0"></i>
-                                <div style="text-align: left">
-                                    <h4>Email Us</h4>
-                                    <p>
-                                        <a href="mailto:info@mbsoftech.com.np">info@mbsoftech.com.np</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14132.639108476387!2d85.3318617!3d27.6814562!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x24124854634980bf%3A0xc1e903683f95e7b5!2sM%20And%20MB%20Soft%20Tech%20Pvt.%20Ltd.!5e0!3m2!1sen!2snp!4v1725019439771!5m2!1sen!2snp"
-                            frameborder="0" style="border: 0; width: 100%; height: 270px" allowfullscreen loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <!-- blog section content-->
+    <section
+      id="blog"
+      class="section section-lg novi-background bg-gray-lighter bg-cover bg-default text-center">
+      <section class="section section-lg novi-background bg-gray-lighter bg-cover bg-default text-center">
+        <div class="container-wide mb-5">
+          <div class="row row-50">
+            <div class="col-sm-12">
+              <h3>Latest Blogs</h3>
+              <div class="divider divider-decorate"></div>
+              <!-- Owl Carousel-->
+              <div
+                class="owl-carousel owl-carousel-team owl-carousel-inset"
+                data-items="1"
+                data-md-items="2"
+                data-xl-items="3"
+                data-stage-padding="15"
+                data-loop="true"
+                data-margin="30"
+                data-mouse-drag="false"
+                data-dots="true"
+                data-autoplay="true"
+              >
+                <article class="post-blog">
+                  <a class="post-blog-image" href="#"
+                    ><img
+                      src="assets/img/blog/img5.jpg"
+                      alt="blog image"
+                  /></a>
+                  <div class="post-blog-caption">
+                    <div class="post-blog-caption-header">
+                      <ul class="post-blog-tags">
+                        <li><a class="button-tags" href="#">Mountains</a></li>
+                      </ul>
+                      <ul class="post-blog-meta">
+                        <li><span>by</span>&nbsp;<a href="#">Rupesh</a></li>
+                      </ul>
                     </div>
-                </div>
-                <!-- Second Column: Contact Form -->
-                <div class="col-md-6 d-flex align-items-center justify-content-center">
-                    <div class="php-email-form d-flex align-items-center justify-content-center">
-                        <form id="send-message-form" name="submit-to-google-sheet">
-                            <div class="row gy-4">
-                                <div class="col-md-6">
-                                    <label for="name-field" class="pb-2">Your Name</label>
-                                    <input type="text" name="name" id="name-field" class="form-control" required />
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="email-field" class="pb-2">Your Email</label>
-                                    <input type="email" class="form-control" name="email" id="email-field" required />
-                                </div>
-                                <div class="col-md-12">
-                                    <label for="subject-field" class="pb-2">Subject</label>
-                                    <input type="text" class="form-control" name="subject" id="subject-field"
-                                        required />
-                                </div>
-                                <div class="col-md-12">
-                                    <label for="message-field" class="pb-2">Message</label>
-                                    <textarea class="form-control" name="message" rows="10" id="message-field"
-                                        required></textarea>
-                                </div>
-                                <div class="col-md-12 text-center">
-                                    <button class="button-submit" type="submit" style="
-                              margin-top: 10px;
-                              color: #ffffff;
-                              background: #0d5c7e;
-                              border: 0;
-                              padding: 12px 25px;
-                              border-radius: 50px;
-                              transition: background-color 0.3s ease;
-                            ">
-                                        Send Message
-                                    </button>
-                                </div>
-                            </div>
-                        </form>
+                    <div class="post-blog-caption-body">
+                      <h5>
+                        <a class="post-blog-title" href="#"
+                          >Top 10 Mountains to Look at: Exclusive Rating by
+                          mounatainer Travel Experts</a
+                        >
+                      </h5>
                     </div>
-                </div>
+                    <div class="post-blog-caption-footer">
+                      <time datetime="2019">Feb 27, 2019 at 6:53 pm</time
+                      ><a class="post-comment" href="#"
+                        ><span
+                          class="icon novi-icon icon-md-middle icon-gray-1 mdi mdi-comment"
+                        ></span
+                        ><span>12</span></a
+                      >
+                    </div>
+                  </div>
+                </article>
+                <article class="post-blog">
+                  <a class="post-blog-image" href="#"
+                    ><img
+                      src="assets/img/blog/img10.jpg"
+                      alt="blog image"
+                  /></a>
+                  <div class="post-blog-caption">
+                    <div class="post-blog-caption-header">
+                      <ul class="post-blog-tags">
+                        <li><a class="button-tags" href="#">Tips</a></li>
+                      </ul>
+                      <ul class="post-blog-meta">
+                        <li><span>by</span>&nbsp;<a href="#">Heera</a></li>
+                      </ul>
+                    </div>
+                    <div class="post-blog-caption-body">
+                      <h5>
+                        <a class="post-blog-title" href="#"
+                          >How to Plan Your Vacation in Advance and Why It’s
+                          Beneficial</a
+                        >
+                      </h5>
+                    </div>
+                    <div class="post-blog-caption-footer">
+                      <time datetime="2019">Feb 27, 2019 at 6:53 pm</time
+                      ><a class="post-comment" href="#"
+                        ><span
+                          class="icon novi-icon icon-md-middle icon-gray-1 mdi mdi-comment"
+                        ></span
+                        ><span>12</span></a
+                      >
+                    </div>
+                  </div>
+                </article>
+                <article class="post-blog">
+                  <a class="post-blog-image" href="#"
+                    ><img
+                      src="assets/img/blog/img11.jpg"
+                      alt="blog image"
+                  /></a>
+                  <div class="post-blog-caption">
+                    <div class="post-blog-caption-header">
+                      <ul class="post-blog-tags">
+                        <li><a class="button-tags" href="#">Traveling</a></li>
+                      </ul>
+                      <ul class="post-blog-meta">
+                        <li><span>by</span>&nbsp;<a href="#">Sujeet</a></li>
+                      </ul>
+                    </div>
+                    <div class="post-blog-caption-body">
+                      <h5>
+                        <a class="post-blog-title" href="#"
+                          >Your Personal Guide to 5 Best Places to Visit on
+                          Earth</a
+                        >
+                      </h5>
+                    </div>
+                    <div class="post-blog-caption-footer">
+                      <time datetime="2019">Feb 27, 2019 at 6:53 pm</time
+                      ><a class="post-comment" href="#"
+                        ><span
+                          class="icon novi-icon icon-md-middle icon-gray-1 mdi mdi-comment"
+                        ></span
+                        ><span>12</span></a
+                      >
+                    </div>
+                  </div>
+                </article>
+              </div>
             </div>
+            <div class="col-12">
+              <a
+                class="button button-secondary button-nina button-offset-lg"
+                href="#"
+                >view all blog posts</a
+              >
+            </div>
+          </div>
         </div>
+      </section>
+
+      <div class="contact-section section-lg bg-light text-center">
+        <div class="container-fluid">
+          <h3 style="color: black">CONTACT US</h3>
+          <div class="divider divider-decorate"></div>
+          <p>
+            Ready to explore the world with ease? Reach out to
+            <b>World Wide Tours and Travel Pvt. Ltd.</b> today. Our team is
+            eager to assist you with customized travel solutions that ensure
+            unforgettable experiences and seamless journeys. Let's start a
+            conversation and make your travel dreams a reality.
+          </p>
+
+          <div class="row">
+            <!-- First Column: Contact Information -->
+            <div
+              class="col-md-6 d-flex align-items-center justify-content-center">
+              <div class="p-4">
+                <div class="info-wrap">
+                  <div class="info-item d-flex">
+                    <i class="mdi mdi-map-marker flex-shrink-0"></i>
+                    <div style="text-align: left">
+                      <h4>Address</h4>
+                      <p>Rudramati Marg, Chabahil, Kathmandu 44600</p>
+                    </div>
+                  </div>
+                  <div class="info-item d-flex">
+                    <i class="mdi mdi-phone flex-shrink-0"></i>
+                    <div style="text-align: left">
+                      <h4>Call Us</h4>
+                      <p>+977-9851174947</p>
+                    </div>
+                  </div>
+                  <div class="info-item d-flex">
+                    <i class="mdi mdi-email flex-shrink-0"></i>
+                    <div style="text-align: left">
+                      <h4>Email Us</h4>
+                      <p>
+                        <a href="mailto:info@mbsoftech.com.np"
+                          >wwttnepal2019@gmail.com</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d220.7415292693564!2d85.3432835!3d27.7214706!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1902247fa3b3%3A0xee10e9e9505941d8!2sWorld%20Wide%20Travel%20%26%20Tours!5e0!3m2!1sen!2snp!4v1722415110945!5m2!1sen!2snp"
+                  frameborder="0"
+                  style="border: 0; width: 100%; height: 270px"
+                  allowfullscreen
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+            <!-- Second Column: Contact Form -->
+            <div
+              class="col-md-6 d-flex align-items-center justify-content-center"
+            >
+              <div
+                class="php-email-form d-flex align-items-center justify-content-center"
+              >
+                <form id="send-message-form" name="submit-to-google-sheet">
+                  <div class="row gy-4">
+                    <div class="col-md-6">
+                      <label for="name-field" class="pb-2">Your Name</label>
+                      <input
+                        type="text"
+                        name="name"
+                        id="name-field"
+                        class="form-control"
+                        required
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <label for="email-field" class="pb-2">Your Email</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        name="email"
+                        id="email-field"
+                        required
+                      />
+                    </div>
+                    <div class="col-md-12">
+                      <label for="subject-field" class="pb-2">Subject</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="subject"
+                        id="subject-field"
+                        required
+                      />
+                    </div>
+                    <div class="col-md-12">
+                      <label for="message-field" class="pb-2">Message</label>
+                      <textarea
+                        class="form-control"
+                        name="message"
+                        rows="10"
+                        id="message-field"
+                        required
+                      ></textarea>
+                    </div>
+                    <div class="col-md-12 text-center">
+                      <button
+                        class="button-submit"
+                        type="submit"
+                        style="
+                          margin-top: 10px;
+                          color: #ffffff;
+                          background: #0d5c7e;
+                          border: 0;
+                          padding: 12px 25px;
+                          border-radius: 50px;
+                          transition: background-color 0.3s ease;
+                        "
+                      >
+                        Send Message
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
 
