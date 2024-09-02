@@ -112,11 +112,20 @@
 <script>
 // JavaScript to add 'active' class to current page's nav link
 document.querySelectorAll('.nav-link').forEach(link => {
-    if (link.href === window.location.href || 
-        (link.getAttribute('href') === 'index.html' && window.location.pathname === '/')) {
+    // Get the full path and query string without hash
+    const currentPath = window.location.pathname + window.location.search;
+    
+    // Create a new URL object for the link to get its path and search string
+    const linkUrl = new URL(link.href);
+    const linkPath = linkUrl.pathname + linkUrl.search;
+
+    // Check if the paths match
+    if (currentPath.includes(linkPath) || 
+        (link.getAttribute('href') === 'index.html' && currentPath === '/')) {
         link.classList.add('active');
     }
 });
+
 </script>
     </main>
 
@@ -576,19 +585,19 @@ document.querySelectorAll('.nav-link').forEach(link => {
             <div class="col-lg-2 col-md-4 mb-4 mb-lg-0 order-lg-2 order-md-3">
               <h4 class="footer-heading-color fw-bold font-sans-serif mb-3 mb-lg-4">Company</h4>
               <ul class="list-unstyled mb-0">
-                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="#!">Mission</a></li>
-                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="#!">Vision</a></li>
-                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="#!">Team</a></li>
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="about.html#value">Mission</a></li>
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="blog.html#blog">Vision</a></li>
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="about.html#team">Team</a></li>
               </ul>
             </div>
             <div class="col-lg-2 col-md-4 mb-4 mb-lg-0 order-lg-3 order-md-4">
               <h4 class="footer-heading-color fw-bold font-sans-serif mb-3 mb-lg-4">Special Links</h4>
               <ul class="list-unstyled mb-0">
-                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="#!">Home</a></li>
-                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="#!">About</a></li>
-                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="#!">Services</a></li>
-                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="#!">Blog</a></li>
-                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="#!">Contacts</a></li>
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="index.html">Home</a></li>
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="about.html">About</a></li>
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="service.html">Services</a></li>
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="blog.html">Blog</a></li>
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="contact.html">Contacts</a></li>
               </ul>
             </div>
             <div class="col-lg-3 col-md-5 col-12 mb-4 mb-md-6 mb-lg-0 order-lg-4 order-md-1">
