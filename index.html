@@ -25,7 +25,9 @@
 
     <style>
       /*form from and to */
-
+      html{
+           scroll-behavior: smooth;
+      }
       .dropdown-list {
         display: none;
         position: absolute;
@@ -73,22 +75,42 @@
     <!--    Main Content-->
     <!-- ===============================================-->
     <main class="main" id="top">
-      <nav class="navbar navbar-expand-lg navbar-light fixed-top py-5 d-block" data-navbar-on-scroll="data-navbar-on-scroll">
-        <div class="container"><a class="navbar-brand" href="index.html">OnCall Travel</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"> </span></button>
-          <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto pt-2 pt-lg-0 font-base align-items-lg-center align-items-start">
-              <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="index.html">Home</a></li>
-              <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="about.html">About</a></li>
-              <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="service.html">Services</a></li>
-              <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="blog.html">Blog</a></li>
-              <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="contact.html">Contact</a></li>
-              
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <section style="padding-top: 7rem;">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 d-block shadow"
+            data-navbar-on-scroll="data-navbar-on-scroll">
+            <div class="container"><a class="navbar-brand" href="index.html">OnCall Travel</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon">
+                    </span></button>
+                <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto pt-2 pt-lg-0 font-base align-items-lg-center align-items-start">
+                        <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page"
+                                href="index.html">Home</a></li>
+                        <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page"
+                                href="about.html">About</a></li>
+                        <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page"
+                                href="service.html">Services</a></li>
+                        <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page"
+                                href="blog.html">Blog</a></li>
+                        <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page"
+                                href="contact.html">Contact</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    <!-- Add JavaScript to set active class -->
+    <script>
+      // JavaScript to add 'active' class to current page's nav link
+      document.querySelectorAll('.nav-link').forEach(link => {
+          if (link.href === window.location.href || 
+              (link.getAttribute('href') === 'index.html' && window.location.pathname === '/')) {
+              link.classList.add('active');
+          }
+      });
+  </script>
+      <section style="padding-top: 4rem;">
         <!-- <div class="bg-holder" style="background-image:url(assets/img/hero/hero-bg.svg);"> -->
         <!-- </div> -->
         <!--/.bg-holder-->
@@ -1040,19 +1062,19 @@
             <div class="col-lg-2 col-md-4 mb-4 mb-lg-0 order-lg-2 order-md-3">
               <h4 class="footer-heading-color fw-bold font-sans-serif mb-3 mb-lg-4">Company</h4>
               <ul class="list-unstyled mb-0">
-                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="#!">Mission</a></li>
-                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="#!">Vision</a></li>
-                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="#!">Team</a></li>
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="about.html#value">Mission</a></li>
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="blog.html#blog">Vision</a></li>
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="about.html#team">Team</a></li>
               </ul>
             </div>
             <div class="col-lg-2 col-md-4 mb-4 mb-lg-0 order-lg-3 order-md-4">
               <h4 class="footer-heading-color fw-bold font-sans-serif mb-3 mb-lg-4">Special Links</h4>
               <ul class="list-unstyled mb-0">
-                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="#!">Home</a></li>
-                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="#!">About</a></li>
-                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="#!">Services</a></li>
-                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="#!">Blog</a></li>
-                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="#!">Contacts</a></li>
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="index.html">Home</a></li>
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="about.html">About</a></li>
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="service.html">Services</a></li>
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="blog.html">Blog</a></li>
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="contact.html">Contacts</a></li>
               </ul>
             </div>
             <div class="col-lg-3 col-md-5 col-12 mb-4 mb-md-6 mb-lg-0 order-lg-4 order-md-1">
