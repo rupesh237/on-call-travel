@@ -14790,6 +14790,9 @@ html.rd-navbar-fixed-linked .page {
 .rd-navbar-shop-header .rd-navbar-static .rd-navbar-search .form-input {
   box-shadow: none;
 }
+input::placeholder{
+  color: #66512c !important;
+}
 
 .rd-navbar-shop-header .rd-navbar-fullwidth .rd-navbar-inner,
 .rd-navbar-shop-header .rd-navbar-static .rd-navbar-inner {
