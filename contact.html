@@ -80,7 +80,7 @@
                       <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page"
                               href="index.html">Home</a></li>
                               <li class="nav-item px-3 px-xl-4 dropdown"><a class="nav-link fw-medium dropbtn" aria-current="page"
-                                href="#">Vehicles</a>
+                                href="allvehicle.html">Vehicles</a>
                                 <div class="dropdown-content">
                                   <a href="allvehicle.html">View All Vehicles</a>
                                   <a href="scorpio.html">View Scorpios</a>
@@ -116,23 +116,23 @@
         </nav>
 
 <!-- Add JavaScript to set active class -->
-<script>
-// JavaScript to add 'active' class to current page's nav link
-document.querySelectorAll('.nav-link').forEach(link => {
-    // Get the full path and query string without hash
-    const currentPath = window.location.pathname + window.location.search;
-    
-    // Create a new URL object for the link to get its path and search string
-    const linkUrl = new URL(link.href);
-    const linkPath = linkUrl.pathname + linkUrl.search;
+          <script>
+          // JavaScript to add 'active' class to current page's nav link
+          document.querySelectorAll('.nav-link').forEach(link => {
+              // Get the full path and query string without hash
+              const currentPath = window.location.pathname + window.location.search;
+              
+              // Create a new URL object for the link to get its path and search string
+              const linkUrl = new URL(link.href);
+              const linkPath = linkUrl.pathname + linkUrl.search;
 
-    // Check if the paths match
-    if (currentPath.includes(linkPath) || 
-        (link.getAttribute('href') === 'index.html' && currentPath === '/')) {
-        link.classList.add('active');
-    }
-});
-</script>
+              // Check if the paths match
+              if (currentPath.includes(linkPath) || 
+                  (link.getAttribute('href') === 'index.html' && currentPath === '/')) {
+                  link.classList.add('active');
+              }
+          });
+          </script>
     </main>
 
 <!--Contact Section Content-->
