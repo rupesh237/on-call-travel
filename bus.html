@@ -156,14 +156,29 @@
 
     <!-- Add JavaScript to set active class -->
     <script>
-        // JavaScript to add 'active' class to current page's nav link
         document.querySelectorAll('.nav-link').forEach(link => {
-            if (link.href === window.location.href ||
+            // Check if the current page is the same as the link href or is the index page
+            if (link.href === window.location.href || 
                 (link.getAttribute('href') === 'index.html' && window.location.pathname === '/')) {
                 link.classList.add('active');
             }
+    
+            // Check if it's inside a dropdown
+            const dropdown = link.closest('.dropdown');
+            if (dropdown) {
+                const dropdownContent = dropdown.querySelector('.dropdown-content');
+                const childLinks = dropdownContent.querySelectorAll('a');
+                childLinks.forEach(childLink => {
+                    if (childLink.href === window.location.href) {
+                        // Add 'active' class to both the child link and parent dropdown
+                        childLink.classList.add('active');
+                        link.classList.add('active');
+                    }
+                });
+            }
         });
     </script>
+
 
 
     <!-- //////////////////////////////// -->
