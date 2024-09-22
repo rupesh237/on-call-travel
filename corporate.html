@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="M And MB Soft Tech Pvt. Ltd.">
+    <meta name="description" content="Oncall Tours and Travels Pvt. Ltd.">
+    <meta name="keywords" content="Oncall Tours and Travels oncall travels and tours">
+    <title>Oncall Tours and Travels Pvt. Ltd.</title>
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link href="assets/img/favicons/apple-touch-icon.png" rel="icon">
+    <link rel="shortcut icon" href="assets/img/favicons/apple-touch-icon.png" type="image/x-icon" >
+    <link rel="shortcut icon" href="assets/img/favicons/apple-touch-icon.png" type="image/x-icon"> 
+    <link href="assets/img/favicons/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- reset css -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/reset.css"> -->
+    <!-- bootstrap -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/vendor/datepicker.min.css"> -->
+    <!-- Latest compiled and minified CSS -->
+    <!-- <link rel="stylesheet" href="css/vendor/bootstrap-select.min.css"> -->
+    <!-- preload -->
+
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"> -->
+
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+
+
+    <link rel="stylesheet" type="text/css" href="css/vendor/loader.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+     <link rel="stylesheet" href="assets/css/style.css">
+     <link rel="stylesheet" href="assets/css/fonts.css">
+    <link href="assets/css/theme.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/b64e399e87.js" crossorigin="anonymous"></script>
+    <link rel="manifest" href="assets/img/favicons/manifest.json">
+    <meta name="theme-color" content="#ffffff">
+    <style>
+              
+      /* Dropdown Menu */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    min-width: 220px;
+    top: 100%;
+    border-radius: 4px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    padding: 10px 15px;
+    color: black;
+}
+
+/* .dropdown-content a:hover {
+    background-color: #555;
+} */
+    </style>
+
+</head>
+
+<body class="">
+    <style>
+        .soc {
+            margin-right: 0px !important;
+        }
+    </style>
+    <script type="text/javascript">
+        /// some script
+
+        // jquery ready start
+        $(document).ready(function () {
+            // jQuery code
+
+            //////////////////////// Prevent closing from click inside dropdown
+            $(document).on('click', '.dropdown-menu', function (e) {
+                e.stopPropagation();
+            });
+
+            // make it as accordion for smaller screens
+            if ($(window).width() < 992) {
+                $('.dropdown-menu a').click(function (e) {
+                    e.preventDefault();
+                    if ($(this).next('.submenu').length) {
+                        $(this).next('.submenu').toggle();
+                    }
+                    $('.dropdown').on('hide.bs.dropdown', function () {
+                        $(this).find('.submenu').hide();
+                    })
+                });
+            }
+
+        }); // jquery end
+    </script>
+    <!-- MAIN -->
+    <!--<div class="load-wrap">-->
+    <!--    <div class="wheel-load">-->
+    <!--        <img src="https://sunaulovehicle.com/frontend/images/loader.gif" alt="" class="image">-->
+    <!--    </div>-->
+    <!--</div>-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 d-block shadow" data-navbar-on-scroll="data-navbar-on-scroll">
+            <div class="container"><a class="navbar-brand" href="index.html">OnCall Travel</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                  aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon">
+                  </span></button>
+              <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
+                  <ul class="navbar-nav ms-auto pt-2 pt-lg-0 font-base align-items-lg-center align-items-start">
+                      <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page"
+                              href="index.html">Home</a></li>
+                              <li class="nav-item px-3 px-xl-4 dropdown"><a class="nav-link fw-medium dropbtn" aria-current="page"
+                                href="#">Vehicles</a>
+                                <div class="dropdown-content">
+                                  <a href="allvehicle.html">View All Vehicles</a>
+                                  <a href="scorpio.html">View Scorpios</a>
+                                  <a href="volvo.html">View Volvo</a>
+                                  <a href="bus.html">View Deluxe Bus</a>
+                                  
+                                </div>
+                          </li>
+                      <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page"
+                              href="vabout.html">About</a></li>
+                      <li class="nav-item px-3 px-xl-4 dropdown"><a class="nav-link fw-medium dropbtn" aria-current="page"
+                              href="service.html">Services</a>
+                              <div class="dropdown-content">
+                                <a href="wedding-car.html">Wedding Rental</a>
+                                <a href="airport.html">Airport Drop/Pickup</a>
+                                <a href="corporate.html">Corporate Vehicle Rental</a>
+                                <a href="within-city.html">Within city</a>
+                                <a href="outstation-travel.html">Outstation Travel</a>
+                                <a href="customize-tour.html">Custmized Travel Vehicle</a>
+                              </div>
+                        </li>
+                      <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page"
+                              href="blog.html">Blog</a></li>
+                      <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page"
+                              href="contact.html">Contact</a></li>
+    
+                  </ul>
+                  <a class="nav-link fw-medium" href="login.html" style="margin-left: auto; padding-left: 100px;">
+                    <i class="fas fa-user fa-lg"></i>
+                  </a>
+              </div>
+          </div>
+        </nav>
+
+    <!-- Add JavaScript to set active class -->
+    <script>
+      // JavaScript to add 'active' class to current page's nav link
+      document.querySelectorAll('.nav-link').forEach(link => {
+          if (link.href === window.location.href || 
+              (link.getAttribute('href') === 'index.html' && window.location.pathname === '/')) {
+              link.classList.add('active');
+          }
+      });
+  </script>
+
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+
+
+    <!-- //////////////////////////////// -->
+    <div class="wheel-start3 style-5">
+        <img src="images/corporate-car-rental-bottom-image.jpg" alt=""
+            class="wheel-img" height="400px">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 padd-lr0">
+                    <div class="wheel-start3-body clearfix marg-lg-t255 marg-lg-b75 marg-sm-t190 marg-xs-b30">
+                        <h3>Corporate Vehicle Rental</h3>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="imgOnBanner-wrap" style="margin-top:-120px ;">
+            <img src="images/corporate-car-rental-bottom-image.jpg"
+                alt="" class="imgOnBanner img-responsive">
+        </div>
+    </div>
+    <div class="container-fluid padd-lr0">
+        <div class="row padd-lr0">
+            <div class="col-xs-12 padd-lr0">
+                <div class="container padd-lr0 xs-padd">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="listing-hedlines t-center">
+                                <h5 class="title">Corporate Vehicle Rental</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 padd-lr0 xs-padd sm-addpadd">
+                            <div class="wheel-collection style-2">
+                                <div class="tabs">
+                                    <div class="tabs-header">
+                                        <ul>
+
+                                            <li class="active"><a href="#">Description</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="tabs-content marg-lg-b30">
+                                      <div class="tabs-item text-item active">
+                                        <p class="p1"
+                                            style="text-align: justify; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 18px; line-height: normal; font-family: Arial;">
+                                            Oncall Tours and Travels Pvt. Ltd. is not just limited to providing services within the city but is also a great
+                                            option for outstation travel. Whether you're planning a trip to a nearby town or a distant city, Oncall Tours and
+                                            Travels offers a comfortable, convenient, and cost-effective way to get there.</p>
+                                        <p class="p1"
+                                            style="text-align: justify; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 18px; line-height: normal; font-family: Arial;">
+                                            One of the main advantages of using Oncall Tours and Travels for outstation journeys is that it is more
+                                            affordable compared to other modes of transportation like trains or flights. You can save on travel costs,
+                                            especially if you're traveling with a group.</p>
+                                        <p class="p1"
+                                            style="text-align: justify; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 18px; line-height: normal; font-family: Arial;">
+                                            Another benefit of choosing Oncall Tours and Travels Pvt. Ltd. is the flexibility and freedom it offers. Unlike
+                                            other transportation options, you can plan your own travel schedule, make stops along the way, and go at your
+                                            own pace.</p>
+                                        <p class="p1"
+                                            style="text-align: justify; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 18px; line-height: normal; font-family: Arial;">
+                                            Oncall vehicles are also more comfortable and spacious compared to other modes of transport. They provide more
+                                            legroom and are equipped with modern amenities like air conditioning, cozy seats, and entertainment systems to
+                                            make your trip more enjoyable.</p>
+                                        <p class="p1"
+                                            style="text-align: justify; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 18px; line-height: normal; font-family: Arial;">
+                                            Traveling with Oncall Tours and Travels Pvt. Ltd. is also a safer option, especially when navigating areas with
+                                            underdeveloped infrastructure or unreliable public transport.</p>
+                                        <p class="p1"
+                                            style="text-align: justify; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 18px; line-height: normal; font-family: Arial;">
+                                            However, using Oncall Tours and Travels for long-distance travel may require some additional planning. You'll
+                                            need to ensure that...</p>
+                                    </div>
+                                    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /////////////////////////////// -->
+
+    <!--Contact Section Content-->
+    <section class="contact-section section-lg bg-light text-center">
+      <div class="container-fluid">
+        <h3 style="color: black">CONTACT US</h3>
+        <div class="divider divider-decorate"></div>
+        <p>
+          Ready to explore the world with ease? Reach out to
+          <b>OnCall Tours and Travels Pvt. Ltd.</b> today. Our team is eager
+          to assist you with customized travel solutions that ensure
+          unforgettable experiences and seamless journeys. Let's start a
+          conversation and make your travel dreams a reality.
+        </p>
+
+        <div class="row">
+          <!-- First Column: Contact Information -->
+          <div
+            class="col-md-6 d-flex align-items-center justify-content-center"
+          >
+            <div class="p-4">
+              <div class="info-wrap">
+                <div class="info-item d-flex">
+                  <i class="mdi mdi-map-marker flex-shrink-0"></i>
+                  <div style="text-align: left">
+                    <h4>Address</h4>
+                    <p>Jadibuti, Kathmandu,44600</p>
+                  </div>
+                </div>
+                <div class="info-item d-flex">
+                  <i class="mdi mdi-phone flex-shrink-0"></i>
+                  <div style="text-align: left">
+                    <h4>Call Us</h4>
+                    <p>+977-9851363054</p>
+                  </div>
+                </div>
+                <div class="info-item d-flex">
+                  <i class="mdi mdi-email flex-shrink-0"></i>
+                  <div style="text-align: left">
+                    <h4>Email Us</h4>
+                    <p>
+                      <a href="mailto:oncalltourstravels@gmail.com"
+                        >oncalltourstravels@gmail.com</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28267.526643536497!2d85.31771703633204!3d27.672766926921668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19014f5fca8d%3A0xcd01c32df66bee0e!2sOncall%20Tours%20%26%20Travels%20Pvt.%20Ltd.!5e0!3m2!1sen!2snp!4v1726468394902!5m2!1sen!2snp" width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+          <!-- Second Column: Contact Form -->
+          <div
+            class="col-md-6 d-flex align-items-center justify-content-center"
+          >
+            <div
+              class="php-email-form d-flex align-items-center justify-content-center"
+            >
+              <form id="contactForm" name="submit-to-google-sheet">
+                <div class="row gy-4">
+                  <div class="col-md-6">
+                    <label for="name-field" class="pb-2">Your Name</label>
+                    <input
+                      type="text"
+                      name="name"
+                      id="name-field"
+                      class="form-control"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="email-field" class="pb-2">Your Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      name="email"
+                      id="email-field"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-12">
+                    <label for="subject-field" class="pb-2">Subject</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="subject"
+                      id="subject-field"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-12">
+                    <label for="message-field" class="pb-2">Message</label>
+                    <textarea
+                      class="form-control"
+                      name="message"
+                      rows="10"
+                      id="message-field"
+                      required
+                    ></textarea>
+                  </div>
+                  <div class="col-md-12 text-center">
+                    <button
+                      class="button-submit"
+                      type="submit"
+                      style="
+                        margin-top: 10px;
+                        color: #ffffff;
+                        background: #0d5c7e;
+                        border: 0;
+                        padding: 12px 25px;
+                        border-radius: 50px;
+                        transition: background-color 0.3s ease;
+                      "
+                    >
+                      Send Message
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  
+  
+        <!-- ============================================-->
+        <!-- <section> begin ============================-->
+        <section class="pt-6">
+  
+          <div class="container">
+            <div class="py-8 px-5 position-relative text-center" style="background-color: rgba(223, 215, 249, 0.199);border-radius: 129px 20px 20px 20px;">
+              <div class="position-absolute start-100 top-0 translate-middle ms-md-n3 ms-n4 mt-3"> <img src="assets/img/cta/send.png" style="max-width:70px;" alt="send icon" /></div>
+              <div class="position-absolute end-0 top-0 z-index--1"> <img src="assets/img/cta/shape-bg2.png" width="264" alt="cta shape" /></div>
+              <div class="position-absolute start-0 bottom-0 ms-3 z-index--1 d-none d-sm-block"> <img src="assets/img/cta/shape-bg1.png" style="max-width: 340px;" alt="cta shape" /></div>
+              <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-10">
+                  <h2 class="text-secondary lh-1-7 mb-7">Subscribe to get information, latest news and other interesting offers about Oncall Tours and Travels</h2>
+                  <form class="row g-3 align-items-center w-lg-75 mx-auto">
+                    <div class="col-sm">
+                      <div class="input-group-icon">
+                        <input class="form-control form-little-squirrel-control" type="email" placeholder="Enter email " aria-label="email" /><img class="input-box-icon" src="assets/img/cta/mail.svg" width="17" alt="mail" />
+                      </div>
+                    </div>
+                    <div class="col-sm-auto">
+                      <button class="btn btn-danger orange-gradient-btn fs--1">Subscribe</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div><!-- end of .container-->
+  
+        </section>
+
+    <!-- FOOTER -->
+    <!-- ///////////////// -->
+    <section class="pb-0 pb-lg-4"></section>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-7 col-12 mb-4 mb-md-6 mb-lg-0 order-0"> <img class="mb-4" src="assets/img/favicons/apple-touch-icon.png" width="125" alt="jadoo" />
+              <p class="fs--1 text-secondary mb-0 fw-medium">Welcome to Oncall Travel & Tours Pvt. Ltd.! We offer rental services for cars and buses, perfect for exploring amazing local destinations. Enjoy a memorable and hassle-free journey with our reliable services!</p>
+            </div>
+            <div class="col-lg-2 col-md-4 mb-4 mb-lg-0 order-lg-1 order-md-2">
+              <h4 class="footer-heading-color fw-bold font-sans-serif mb-3 mb-lg-4">Address</h4>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="#!">New Baneshwor-10</a></li>
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="#!">Kathmandu, 44600, Nepal</a></li>
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="#!">(Sankhamul)</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-4 mb-4 mb-lg-0 order-lg-2 order-md-3">
+              <h4 class="footer-heading-color fw-bold font-sans-serif mb-3 mb-lg-4">Company</h4>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="about.html#value">Mission</a></li>
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="blog.html#blog">Vision</a></li>
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="about.html#team">Team</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-4 mb-4 mb-lg-0 order-lg-3 order-md-4">
+              <h4 class="footer-heading-color fw-bold font-sans-serif mb-3 mb-lg-4">Special Links</h4>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="index.html">Home</a></li>
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="about.html">About</a></li>
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="service.html">Services</a></li>
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="blog.html">Blog</a></li>
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="contact.html">Contacts</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-5 col-12 mb-4 mb-md-6 mb-lg-0 order-lg-4 order-md-1">
+              <div class="icon-group mb-4"> <a class="text-decoration-none icon-item shadow-social" id="facebook" href="#!"><i class="fab fa-facebook-f"> </i></a><a class="text-decoration-none icon-item shadow-social" id="instagram" href="#!"><i class="fab fa-instagram"> </i></a><a class="text-decoration-none icon-item shadow-social" id="twitter" href="#!"><i class="fab fa-twitter"> </i></a></div>
+              <h4 class="fw-medium font-sans-serif text-secondary mb-3">Discover our app</h4>
+              <div class="d-flex align-items-center"> <a href="#!"> <img class="me-2" src="assets/img/play-store.png" alt="play store" /></a><a href="#!"> <img src="assets/img/apple-store.png" alt="apple store" /></a></div>
+            </div>
+          </div>
+        </div><!-- end of .container-->
+
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+        <hr>
+
+        <div class="py-5 ">
+          <div class="col-md-6 mx-auto text-center">
+            <span class="mb-0 text-primary">
+              All rights reserved &copy; 2024 OnCall Travels & Tours
+            </span>
+          </div>
+          <div class="position-absolute bottom-0 end-0">
+            <small class="d-inline mr-2">
+              Powered by <a href="https://mbsoftech.com.np/" target="_blank" rel="noopener noreferrer" style="color: blue;">M & MB Softech</a> – Building your digital future
+            </small>
+          </div>          
+        </div>
+
+
+
+    <!--<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"-->
+    <!--    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">-->
+    <!--</script>-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous">
+        </script>
+    <!-- Scripts project -->
+    <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- count -->
+    <!-- <script type="text/javascript" src='js/count.js'></script> -->
+    <!-- google maps -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBt5tJTim4lOO3ojbGARhPd1Z3O3CnE-C8"
+        type="text/javascript"></script>
+    <!-- swiper -->
+    <!-- <script type="text/javascript" src="js/swiper.min.js"></script> -->
+    <script type="text/javascript" src="js/equal-heightplugin.js"></script>
+    <script type="text/javascript" src="js/jquery-datepicker.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script type="text/javascript" src="js/bootstrap-select.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+
+
+    <script src="vendors/@popperjs/popper.min.js"></script>
+    <script src="vendors/bootstrap/bootstrap.min.js"></script>
+    <script src="vendors/is/is.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+    <script src="vendors/fontawesome/all.min.js"></script>
+    <script src="assets/js/core.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/theme.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;family=Volkhov:wght@700&amp;display=swap" rel="stylesheet">
+
+    <!-- sixth block end -->
+</body>
+
+</html>

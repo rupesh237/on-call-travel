@@ -65,6 +65,31 @@
             position: relative !important;
             /* Ensure the dropdown is positioned relative to the input */
         }
+
+      /* Dropdown Menu */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    min-width: 260px;
+    top: 100%;
+    border-radius: 4px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    padding: 10px 15px;
+    color: black;
+}
+
+/* .dropdown-content a:hover {
+    background-color: #555;
+} */
     </style>
 
     <!-- ===============================================-->
@@ -84,29 +109,51 @@
     <!-- ===============================================-->
     <main class="main" id="top">
       <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 d-block shadow"
-      data-navbar-on-scroll="data-navbar-on-scroll">
-      <div class="container"><a class="navbar-brand" href="index.html">OnCall Travel</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-              aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon">
-              </span></button>
-          <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
-              <ul class="navbar-nav ms-auto pt-2 pt-lg-0 font-base align-items-lg-center align-items-start">
-                  <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page"
-                          href="index.html">Home</a></li>
-                  <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page"
-                          href="about.html">About</a></li>
-                  <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page"
-                          href="service.html">Services</a></li>
-                  <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page"
-                          href="blog.html">Blog</a></li>
-                  <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page"
-                          href="contact.html">Contact</a></li>
-
-              </ul>
+            data-navbar-on-scroll="data-navbar-on-scroll">
+            <div class="container"><a class="navbar-brand" href="index.html">OnCall Travel</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                  aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon">
+                  </span></button>
+              <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
+                  <ul class="navbar-nav ms-auto pt-2 pt-lg-0 font-base align-items-lg-center align-items-start">
+                      <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page"
+                              href="index.html">Home</a></li>
+                              <li class="nav-item px-3 px-xl-4 dropdown"><a class="nav-link fw-medium dropbtn" aria-current="page"
+                                href="#">Vehicles</a>
+                                <div class="dropdown-content">
+                                  <a href="allvehicle.html">View All Vehicles</a>
+                                  <a href="scorpio.html">View Scorpios</a>
+                                  <a href="volvo.html">View Volvo</a>
+                                  <a href="bus.html">View Deluxe Bus</a>
+                                  
+                                </div>
+                          </li>
+                      <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page"
+                              href="vabout.html">About</a></li>
+                      <li class="nav-item px-3 px-xl-4 dropdown"><a class="nav-link fw-medium dropbtn" aria-current="page"
+                              href="service.html">Services</a>
+                              <div class="dropdown-content">
+                                <a href="wedding-car.html">Wedding Rental</a>
+                                <a href="airport.html">Airport Drop/Pickup</a>
+                                <a href="corporate.html">Corporate Vehicle Rental</a>
+                                <a href="within-city.html">Within city</a>
+                                <a href="outstation-travel.html">Outstation Travel</a>
+                                <a href="customize-tour.html">Custmized Travel Vehicle</a>
+                              </div>
+                        </li>
+                      <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page"
+                              href="blog.html">Blog</a></li>
+                      <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page"
+                              href="contact.html">Contact</a></li>
+    
+                  </ul>
+                  <a class="nav-link fw-medium" href="login.html" style="margin-left: auto; padding-left: 100px;">
+                    <i class="fas fa-user fa-lg"></i>
+                  </a>
+              </div>
           </div>
-      </div>
-  </nav>
+        </nav>
 
 <!-- Add JavaScript to set active class -->
 <script>
@@ -138,26 +185,109 @@ document.querySelectorAll('.nav-link').forEach(link => {
       >
         <h3>our services</h3>
         <div class="divider divider-decorate"></div>
-        <div class="col-lg-12 col-sm-6 mb-6">
-          <div class="card service-card shadow-hover rounded-3">
-            <article class=" box-minimal-border d-flex flex-column align-items-center">
-              <div class="box-minimal-icon novi-icon mdi mdi-car"></div>
-              <p class="big box-minimal-title">
-                <strong>Rent Vehicles</strong>
-              </p>
-              <div class="box-minimal-text text-spacing-sm">
-                We offer an extensive range of <strong>vehicles for rent</strong>, 
-                designed to suit various needs and preferences. Whether you're looking 
-                for a sleek <strong>sedan</strong>, a spacious <strong>SUV</strong>, a reliable <strong>van</strong>, 
-                or a larger vehicle like a <strong>Hiace</strong> or <strong>bus</strong>, we’ve got you covered. 
-                Our fleet caters to both <strong>luxury and comfort</strong>, ensuring a smooth and enjoyable experience 
-                for all types of travelers, from families to corporate clients. Each vehicle is meticulously maintained 
-                and equipped with modern amenities for your convenience, making us the ideal choice for short-term trips 
-                or long-term rentals. Enjoy a seamless and personalized rental service that prioritizes your satisfaction.
-              </div>
-              
-              
-            </article>
+        <div class="row">
+          <div class="col-lg-4 col-sm-6 mb-6">
+            <div class="card service-card shadow-hover rounded-3">
+              <a href=""><article class=" box-minimal-border d-flex flex-column align-items-center">
+                <div class=""><img src="images/wedding.jpeg" alt="Airport" style="border-radius: 8px;"></div>
+                <p class="big box-minimal-title">
+                  <strong>Wedding Car Rental</strong>
+                </p>
+                <hr />
+                <div class="box-minimal-text text-spacing-sm">
+                  We offer an extensive range of <strong>vehicles for rent</strong>, 
+                  designed to pick you up and drop at the airport.
+                </div>
+                
+                
+              </article></a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 mb-6">
+            <div class="card service-card shadow-hover rounded-3">
+              <a href=""><article class=" box-minimal-border d-flex flex-column align-items-center">
+                <div class=""><img src="images/airport.jpg" alt="Airport" style="border-radius: 8px;"></div>
+                <p class="big box-minimal-title">
+                  <strong>Airport Drop/Pickup</strong>
+                </p>
+                <hr />
+                <div class="box-minimal-text text-spacing-sm">
+                  We offer an extensive range of <strong>vehicles for rent</strong>, 
+                  designed to pick you up and drop at the airport.
+                </div>
+                
+                
+              </article></a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 mb-6">
+            <div class="card service-card shadow-hover rounded-3 text-center align-items-center">
+              <a href=""><article class=" box-minimal-border d-flex flex-column align-items-center">
+                <div class=""><img src="images/corporate-car-rental-bottom-image.jpg" alt="Airport" style="border-radius: 8px;"></div>
+                <p class="big box-minimal-title">
+                  <strong>Corporate Rental Vehicle</strong>
+                </p>
+                <hr />
+                <div class="box-minimal-text text-spacing-sm">
+                  We offer an extensive range of <strong>vehicles for rent</strong>, 
+                  designed to pick you up and drop at the airport.
+                </div>
+                
+                
+              </article></a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 mb-6">
+            <div class="card service-card shadow-hover rounded-3 text-center align-items-center">
+              <a href=""><article class=" box-minimal-border d-flex flex-column align-items-center">
+                <div class=""><img src="images/within-city.jpg" alt="Airport" style="border-radius: 8px;"></div>
+                <p class="big box-minimal-title">
+                  <strong>Within City</strong>
+                </p>
+                <hr />
+                <div class="box-minimal-text text-spacing-sm">
+                  We offer an extensive range of <strong>vehicles for rent</strong>, 
+                  designed to pick you up and drop at the airport.
+                </div>
+                
+                
+              </article></a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 mb-6">
+            <div class="card service-card shadow-hover rounded-3 text-center align-items-center">
+              <a href=""><article class=" box-minimal-border d-flex flex-column align-items-center">
+                <div class=""><img src="images/toyota.jpg" alt="Airport" style="border-radius: 8px;"></div>
+                <p class="big box-minimal-title">
+                  <strong>Outstation</strong>
+                </p>
+                <hr />
+                <div class="box-minimal-text text-spacing-sm">
+                  We offer an extensive range of <strong>vehicles for rent</strong>, 
+                  designed to pick you up and drop at the airport.
+                </div>
+                
+                
+              </article></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 mb-6">
+            <div class="card service-card shadow-hover rounded-3 text-center align-items-center">
+              <a href=""><article class=" box-minimal-border d-flex flex-column align-items-center">
+                <div class=""><img src="images/airport.jpg" alt="Airport" style="border-radius: 8px;"></div>
+                <p class="big box-minimal-title">
+                  <strong>Customized Rental Vehicle</strong>
+                </p>
+                <hr />
+                <div class="box-minimal-text text-spacing-sm">
+                  We offer an extensive range of <strong>vehicles for rent</strong>, 
+                  designed to pick you up and drop at the airport.
+                </div>
+                
+                
+              </article></a>
+            </div>
           </div>
         </div>
         <!-- <div class="row row-50 justify-content-sm-center text-left">
@@ -219,7 +349,7 @@ document.querySelectorAll('.nav-link').forEach(link => {
         </div> -->
       </div>
 
-      <!--Contact Section Content-->
+     <!--Contact Section Content-->
     <section class="contact-section section-lg bg-light text-center">
       <div class="container-fluid">
         <h3 style="color: black">CONTACT US</h3>
@@ -243,14 +373,14 @@ document.querySelectorAll('.nav-link').forEach(link => {
                   <i class="mdi mdi-map-marker flex-shrink-0"></i>
                   <div style="text-align: left">
                     <h4>Address</h4>
-                    <p>New Baneshwor-10, Kathmandu 44600</p>
+                    <p>Jadibuti, Kathmandu,44600</p>
                   </div>
                 </div>
                 <div class="info-item d-flex">
                   <i class="mdi mdi-phone flex-shrink-0"></i>
                   <div style="text-align: left">
                     <h4>Call Us</h4>
-                    <p>+977-9763200761</p>
+                    <p>+977-9851363054</p>
                   </div>
                 </div>
                 <div class="info-item d-flex">
@@ -258,21 +388,14 @@ document.querySelectorAll('.nav-link').forEach(link => {
                   <div style="text-align: left">
                     <h4>Email Us</h4>
                     <p>
-                      <a href="mailto:info@mbsoftech.com.np"
-                        >info@mbsoftech.com.np</a
+                      <a href="mailto:oncalltourstravels@gmail.com"
+                        >oncalltourstravels@gmail.com</a
                       >
                     </p>
                   </div>
                 </div>
               </div>
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14132.639108476387!2d85.3318617!3d27.6814562!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x24124854634980bf%3A0xc1e903683f95e7b5!2sM%20And%20MB%20Soft%20Tech%20Pvt.%20Ltd.!5e0!3m2!1sen!2snp!4v1725019439771!5m2!1sen!2snp"
-                frameborder="0"
-                style="border: 0; width: 100%; height: 270px"
-                allowfullscreen
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28267.526643536497!2d85.31771703633204!3d27.672766926921668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19014f5fca8d%3A0xcd01c32df66bee0e!2sOncall%20Tours%20%26%20Travels%20Pvt.%20Ltd.!5e0!3m2!1sen!2snp!4v1726468394902!5m2!1sen!2snp" width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
           <!-- Second Column: Contact Form -->
@@ -282,7 +405,7 @@ document.querySelectorAll('.nav-link').forEach(link => {
             <div
               class="php-email-form d-flex align-items-center justify-content-center"
             >
-              <form id="send-message-form" name="submit-to-google-sheet">
+              <form id="contactForm" name="submit-to-google-sheet">
                 <div class="row gy-4">
                   <div class="col-md-6">
                     <label for="name-field" class="pb-2">Your Name</label>
@@ -348,65 +471,57 @@ document.querySelectorAll('.nav-link').forEach(link => {
         </div>
       </div>
     </section>
-    </section>
 
 
-    <!-- ============================================-->
-    <!-- <section> begin ============================-->
-    <section class="pt-6">
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="pt-6">
 
         <div class="container">
-            <div class="py-8 px-5 position-relative text-center"
-                style="background-color: rgba(223, 215, 249, 0.199);border-radius: 129px 20px 20px 20px;">
-                <div class="position-absolute start-100 top-0 translate-middle ms-md-n3 ms-n4 mt-3"> <img
-                        src="assets/img/cta/send.png" style="max-width:70px;" alt="send icon" /></div>
-                <div class="position-absolute end-0 top-0 z-index--1"> <img src="assets/img/cta/shape-bg2.png"
-                        width="264" alt="cta shape" /></div>
-                <div class="position-absolute start-0 bottom-0 ms-3 z-index--1 d-none d-sm-block"> <img
-                        src="assets/img/cta/shape-bg1.png" style="max-width: 340px;" alt="cta shape" /></div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-8 col-md-10">
-                        <h2 class="text-secondary lh-1-7 mb-7">Subscribe to get information, latest news and other
-                            interesting offers about Cobham</h2>
-                        <form class="row g-3 align-items-center w-lg-75 mx-auto">
-                            <div class="col-sm">
-                                <div class="input-group-icon">
-                                    <input class="form-control form-little-squirrel-control" type="email"
-                                        placeholder="Enter email " aria-label="email" /><img class="input-box-icon"
-                                        src="assets/img/cta/mail.svg" width="17" alt="mail" />
-                                </div>
-                            </div>
-                            <div class="col-sm-auto">
-                                <button class="btn btn-danger orange-gradient-btn fs--1">Subscribe</button>
-                            </div>
-                        </form>
+          <div class="py-8 px-5 position-relative text-center" style="background-color: rgba(223, 215, 249, 0.199);border-radius: 129px 20px 20px 20px;">
+            <div class="position-absolute start-100 top-0 translate-middle ms-md-n3 ms-n4 mt-3"> <img src="assets/img/cta/send.png" style="max-width:70px;" alt="send icon" /></div>
+            <div class="position-absolute end-0 top-0 z-index--1"> <img src="assets/img/cta/shape-bg2.png" width="264" alt="cta shape" /></div>
+            <div class="position-absolute start-0 bottom-0 ms-3 z-index--1 d-none d-sm-block"> <img src="assets/img/cta/shape-bg1.png" style="max-width: 340px;" alt="cta shape" /></div>
+            <div class="row justify-content-center">
+              <div class="col-lg-8 col-md-10">
+                <h2 class="text-secondary lh-1-7 mb-7">Subscribe to get information, latest news and other interesting offers about Oncall Tours And Travels</h2>
+                <form class="row g-3 align-items-center w-lg-75 mx-auto" id="newsletterForm">
+                  <div class="col-sm">
+                    <div class="input-group-icon">
+                      <input class="form-control form-little-squirrel-control" type="email" name="email" id="newsletter-email" placeholder="Enter email " aria-label="email" /><img class="input-box-icon" src="assets/img/cta/mail.svg" width="17" alt="mail" />
                     </div>
-                </div>
+                  </div>
+                  <div class="col-sm-auto">
+                    <button class="btn btn-danger orange-gradient-btn fs--1" type="submit">Subscribe</button>
+                  </div>
+                </form>
+              </div>
             </div>
+          </div>
         </div><!-- end of .container-->
 
-    </section>
-    <!-- <section> close ============================-->
-    <!-- ============================================-->
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+        
 
 
-
-
-    <!-- ============================================-->
-    <!-- <section> begin ============================-->
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
       <section class="pb-0 pb-lg-4">
 
         <div class="container">
           <div class="row">
-            <div class="col-lg-3 col-md-7 col-12 mb-4 mb-md-6 mb-lg-0 order-0"> <img class="mb-4" src="assets/img/logo_refresh.png" width="125" alt="jadoo" />
+            <div class="col-lg-3 col-md-7 col-12 mb-4 mb-md-6 mb-lg-0 order-0"> <img class="mb-4" src="images/logo_refresh-1.png" width="125" alt="jadoo" />
               <p class="fs--1 text-secondary mb-0 fw-medium">Welcome to Oncall Travel & Tours Pvt. Ltd.! We offer rental services for cars and buses, perfect for exploring amazing local destinations. Enjoy a memorable and hassle-free journey with our reliable services!</p>
             </div>
             <div class="col-lg-2 col-md-4 mb-4 mb-lg-0 order-lg-1 order-md-2">
               <h4 class="footer-heading-color fw-bold font-sans-serif mb-3 mb-lg-4">Address</h4>
               <ul class="list-unstyled mb-0">
-                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="#!">New Baneshwor-10</a></li>
-                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="#!">Kathmandu, 44600, Nepal</a></li>
-                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="#!">(Sankhamul)</a></li>
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="#!">Jadibuti, Kathmandu</a></li>
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="#!">44600, Nepal</a></li>
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="#!"></a></li>
               </ul>
             </div>
             <div class="col-lg-2 col-md-4 mb-4 mb-lg-0 order-lg-2 order-md-3">
@@ -436,206 +551,246 @@ document.querySelectorAll('.nav-link').forEach(link => {
         </div><!-- end of .container-->
 
       </section>
-    <!-- <section> close ============================-->
-    <!-- ============================================-->
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+        <hr>
 
-      <hr>
-    <div class="py-5 ">
-      <div class="col-md-6 mx-auto text-center">
-        <span class="mb-0 text-primary">
-          All rights reserved &copy; 2024 OnCall Travels & Tours
-        </span>
-      </div>
-      <div class="position-absolute bottom-0 end-0">
-        <small class="d-inline mr-2">
-          Powered by <a href="https://mbsoftech.com.np/" target="_blank" rel="noopener noreferrer" style="color: blue;">M & MB Softech</a> – Building your digital future
-        </small>
-      </div>          
-    </div>
+        <div class="py-5 ">
+          <div class="col-md-6 mx-auto text-center">
+            <span class="mb-0 text-primary">
+              All rights reserved &copy; 2024 OnCall Travels & Tours
+            </span>
+          </div>
+          <div class="position-absolute bottom-0 end-0">
+            <small class="d-inline mr-2">
+              Powered by <a href="https://mbsoftech.com.np/" target="_blank" rel="noopener noreferrer" style="color: blue;">M & MB Softech</a> – Building your digital future
+            </small>
+          </div>          
+        </div>
+        
+      
+      
     </main>
     <!-- ===============================================-->
     <!--    End of Main Content-->
     <!-- ===============================================-->
 
-    <!--JS for input validation-->
     <script src="//code.tidio.co/1ece3oawpq0buawc3rpbhpb6khps9kf3.js" async></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            document
-                .getElementById("bookingForm")
-                .addEventListener("submit", function (event) {
-                    // Get form elements
-                    const from = document.querySelector('input[name="from"]');
-                    const to = document.querySelector('input[name="to"]');
-                    const departDate = document.querySelector(
-                        'input[name="departDate"]'
-                    );
-                    const adults = document.querySelector('input[name="adults"]');
-                    const contact = document.querySelector('input[name="contact"]');
 
-                    // Validate required fields
-                    if (
-                        !from.value ||
-                        !to.value ||
-                        !departDate.value ||
-                        !adults.value ||
-                        !contact.value
-                    ) {
-                        alert("Please fill out all required fields.");
-                        event.preventDefault(); // Prevent form submission
-                        return; // Exit the function
-                    }
+     <!--JS for input validation-->
+     <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document
+          .getElementById("bookingForm")
+          .addEventListener("submit", function (event) {
+            // Get form elements
+            const from = document.querySelector('input[name="from"]');
+            const to = document.querySelector('input[name="to"]');
+            const departDate = document.querySelector(
+              'input[name="departDate"]'
+            );
+            const adults = document.querySelector('input[name="adults"]');
+            const contact = document.querySelector('input[name="contact"]');
 
-                    // Validate contact number
-                    const contactValue = contact.value;
-                    if (!/^\d{1,13}$/.test(contactValue)) {
-                        alert("Contact number must be numeric and up to 13 digits.");
-                        event.preventDefault(); // Prevent form submission
-                        return; // Exit the function
-                    }
+            // Validate required fields
+            if (
+              !from.value ||
+              !to.value ||
+              !departDate.value ||
+              !adults.value ||
+              !contact.value
+            ) {
+              alert("Please fill out all required fields.");
+              event.preventDefault(); // Prevent form submission
+              return; // Exit the function
+            }
 
-                    // If all validations pass, form submission will proceed
-                });
-        });
+            // Validate contact number
+            const contactValue = contact.value;
+            if (!/^\d{1,13}$/.test(contactValue)) {
+              alert("Contact number must be numeric and up to 13 digits.");
+              event.preventDefault(); // Prevent form submission
+              return; // Exit the function
+            }
+
+            // If all validations pass, form submission will proceed
+          });
+      });
     </script>
 
     <!--JS to dynamically replace the <select> elements with custom input fields and dropdown lists-->
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            function setupDropdown(inputId, dropdownId) {
-                const input = document.getElementById(inputId);
-                const dropdown = document.getElementById(dropdownId);
-                const options = dropdown.querySelectorAll("div");
+      document.addEventListener("DOMContentLoaded", function () {
+        function setupDropdown(inputId, dropdownId) {
+          const input = document.getElementById(inputId);
+          const dropdown = document.getElementById(dropdownId);
+          const options = dropdown.querySelectorAll("div");
 
-                // Show the dropdown list when the input field is clicked
-                input.addEventListener("click", function () {
-                    dropdown.style.display = "block";
-                });
+          // Show the dropdown list when the input field is clicked
+          input.addEventListener("click", function () {
+            dropdown.style.display = "block";
+          });
 
-                // Filter dropdown options based on user input
-                input.addEventListener("input", function () {
-                    const filter = input.value.toLowerCase(); // Convert input value to lowercase for case-insensitive comparison
-                    options.forEach((option) => {
-                        if (option.textContent.toLowerCase().includes(filter)) {
-                            // Check if option includes the input value
-                            option.style.display = "block"; // Show option if it matches the input
-                        } else {
-                            option.style.display = "none"; // Hide option if it doesn't match the input
-                        }
-                    });
-                });
+          // Filter dropdown options based on user input
+          input.addEventListener("input", function () {
+            const filter = input.value.toLowerCase(); // Convert input value to lowercase for case-insensitive comparison
+            options.forEach((option) => {
+              if (option.textContent.toLowerCase().includes(filter)) {
+                // Check if option includes the input value
+                option.style.display = "block"; // Show option if it matches the input
+              } else {
+                option.style.display = "none"; // Hide option if it doesn't match the input
+              }
+            });
+          });
 
-                // Set input field value to the selected option and hide the dropdown
-                options.forEach((option) => {
-                    option.addEventListener("click", function () {
-                        input.value = option.textContent; // Set input value to the selected option text
-                        dropdown.style.display = "none"; // Hide the dropdown list
-                    });
-                });
+          // Set input field value to the selected option and hide the dropdown
+          options.forEach((option) => {
+            option.addEventListener("click", function () {
+              input.value = option.textContent; // Set input value to the selected option text
+              dropdown.style.display = "none"; // Hide the dropdown list
+            });
+          });
 
-                // Hide the dropdown list when clicking outside of the input field or dropdown list
-                document.addEventListener("click", function (event) {
-                    if (
-                        !input.contains(event.target) && // Check if the click is outside the input field
-                        !dropdown.contains(event.target) // Check if the click is outside the dropdown list
-                    ) {
-                        dropdown.style.display = "none"; // Hide the dropdown list
-                    }
-                });
+          // Hide the dropdown list when clicking outside of the input field or dropdown list
+          document.addEventListener("click", function (event) {
+            if (
+              !input.contains(event.target) && // Check if the click is outside the input field
+              !dropdown.contains(event.target) // Check if the click is outside the dropdown list
+            ) {
+              dropdown.style.display = "none"; // Hide the dropdown list
             }
+          });
+        }
 
-            // Setup the dropdowns for both "From" and "To" inputs
-            setupDropdown("fromCityInput", "fromDropdownList");
-            setupDropdown("toCityInput", "toDropdownList");
-        });
+        // Setup the dropdowns for both "From" and "To" inputs
+        setupDropdown("fromCityInput", "fromDropdownList");
+        setupDropdown("toCityInput", "toDropdownList");
+      });
     </script>
 
     <!--JS for input validation-->
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            document
-                .getElementById("bookingForm")
-                .addEventListener("submit", function (event) {
-                    // Get form elements
-                    const from = document.querySelector('select[name="from"]');
-                    const to = document.querySelector('select[name="to"]');
-                    const departDate = document.querySelector(
-                        'input[name="departDate"]'
-                    );
-                    const adults = document.querySelector('input[name="adults"]');
-                    const contact = document.querySelector('input[name="contact"]');
+      document.addEventListener("DOMContentLoaded", function () {
+        document
+          .getElementById("bookingForm")
+          .addEventListener("submit", function (event) {
+            // Get form elements
+            const from = document.querySelector('select[name="from"]');
+            const to = document.querySelector('select[name="to"]');
+            const departDate = document.querySelector(
+              'input[name="departDate"]'
+            );
+            const adults = document.querySelector('input[name="adults"]');
+            const contact = document.querySelector('input[name="contact"]');
 
-                    // Validate required fields
-                    if (
-                        !from.value ||
-                        !to.value ||
-                        !departDate.value ||
-                        !adults.value ||
-                        !contact.value
-                    ) {
-                        alert("Please fill out all required fields.");
-                        event.preventDefault(); // Prevent form submission
-                        return; // Exit the function
-                    }
-
-                    // Validate contact number
-                    const contactValue = contact.value;
-                    if (!/^\d{1,13}$/.test(contactValue)) {
-                        alert("Contact number must be numeric and up to 13 digits.");
-                        event.preventDefault(); // Prevent form submission
-                        return; // Exit the function
-                    }
-                });
-        });
-    </script>
-
-    <!--JS for Booking form-->
-
-    <script>
-        $(document).ready(function () {
-            // Initialize datepicker
-            if ($.fn.datepicker) {
-                $("#dateForm").datepicker();
-            } else {
-                console.error(
-                    "Datepicker function is not available. Make sure jQuery UI is loaded correctly."
-                );
+            // Validate required fields
+            if (
+              !from.value ||
+              !to.value ||
+              !departDate.value ||
+              !adults.value ||
+              !contact.value
+            ) {
+              alert("Please fill out all required fields.");
+              event.preventDefault(); // Prevent form submission
+              return; // Exit the function
             }
 
-            $("#bookingForm").on("submit", function (e) {
-                e.preventDefault();
-
-                console.log("Form submitted");
-
-                const formData = {
-                    from: $('input[name="from"]').val(), // Updated selector
-                    to: $('input[name="to"]').val(), // Updated selector
-                    departDate: $('input[name="departDate"]').val(), // Updated selector
-                    duration: $('select[name="duration"]').val(), // Updated selector
-                    adults: $('input[name="adults"]').val(), // Updated selector
-                    children: $('input[name="children"]').val(), // Updated selector
-                    contact: $('input[name="contact"]').val(), // Updated selector
-                };
-
-                console.log("Form data:", formData);
-
-                $.ajax({
-                    type: "POST",
-                    url: "/api/submit-booking",
-                    contentType: "application/json",
-                    data: JSON.stringify(formData),
-                    success: function (response) {
-                        console.log("Success:", response);
-                        alert(response.message); // Display success message
-                    },
-                    error: function (err) {
-                        console.error("Error:", err);
-                        // Optionally, handle error display here if needed
-                    },
-                });
-            });
-        });
+            // Validate contact number
+            const contactValue = contact.value;
+            if (!/^\d{1,13}$/.test(contactValue)) {
+              alert("Contact number must be numeric and up to 13 digits.");
+              event.preventDefault(); // Prevent form submission
+              return; // Exit the function
+            }
+          });
+      });
     </script>
+
+<!--JS for Booking form-->
+<script>
+  const form1 = document.getElementById('bookingForm');
+  const webAppUrl1 = 'https://script.google.com/macros/s/AKfycbyCsg9649o1hlULQvcPCcyieueXpK7R9eErLoP76KWnlTT22R40_4CS6m--FC63hk1S/exec';  // Replace with your actual Web App URL
+
+  form1.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const formData = new FormData(form1);  // Use form1 here
+    formData.append('action', 'submit');
+    formData.append('sheet', 'Bookings');  // Specify that we're submitting to Bookings
+
+    fetch(webAppUrl1, {
+      method: 'POST',
+      body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+      if (data.status === 'success') {
+        alert('Booking Successful');
+        form1.reset();  // Use form1 to reset the form
+      }
+    })
+    .catch(error => console.error('Error:', error));
+  });
+</script>
+
+
+
+<!--JS for Contact form-->
+<script>
+  const form2 = document.getElementById('contactForm');
+  const webAppUrl2 = 'https://script.google.com/macros/s/AKfycbyWvVcGXL7nsII1CQyVp_ZJlHukqvsw9GoZ49DeIklFe2deC26USozqw-bfNpBnftnR/exec';  // Replace with your actual Web App URL
+
+  form2.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const formData = new FormData(form2);  // Use form2 here
+    formData.append('action', 'submit');
+    formData.append('sheet', 'Messages');  // Specify that we're submitting to Messages
+
+    fetch(webAppUrl2, {
+      method: 'POST',
+      body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+      if (data.status === 'success') {
+        alert('Message Sent');
+        form2.reset();  // Use form2 to reset the form
+      }
+    })
+    .catch(error => console.error('Error:', error));
+  });
+</script>
+
+
+<!--JS for Newsletter Subscription-->
+  <script>
+  const form3 = document.getElementById('newsletterForm');
+  const webAppUrl3 = 'https://script.google.com/macros/s/AKfycbwG_yJEJsJsG_7j9upLlvaxaOpwHcFfu4MJ6N_RHOL2Afn4-g34QkGzcO27KF0zWjuSWw/exec';  // Replace with your actual Web App URL
+
+  form3.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const formData = new FormData(form3);  // Use form3 here
+    formData.append('action', 'submit');
+    formData.append('sheet', 'Newsletter');  // Specify that we're submitting to Newsletter
+
+    fetch(webAppUrl3, {
+      method: 'POST',
+      body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+      if (data.status === 'success') {
+        alert('Subscription Added');
+        form3.reset();  // Use form to reset the form
+      }
+    })
+    .catch(error => console.error('Error:', error));
+  });
+</script>
 
 
     <!-- ===============================================-->
@@ -650,9 +805,7 @@ document.querySelectorAll('.nav-link').forEach(link => {
     <script src="assets/js/script.js"></script>
     <script src="assets/js/theme.js"></script>
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;family=Volkhov:wght@700&amp;display=swap"
-        rel="stylesheet">
-</body>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;family=Volkhov:wght@700&amp;display=swap" rel="stylesheet">
+  </body>
 
 </html>

@@ -65,6 +65,30 @@
             position: relative !important;
             /* Ensure the dropdown is positioned relative to the input */
         }
+        /* Dropdown Menu */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    min-width: 260px;
+    top: 100%;
+    border-radius: 4px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    padding: 10px 15px;
+    color: black;
+}
+
+/* .dropdown-content a:hover {
+    background-color: #555;
+} */
     </style>
 
     <!-- ===============================================-->
@@ -74,6 +98,7 @@
      <link rel="stylesheet" href="assets/css/style.css">
      <link rel="stylesheet" href="assets/css/fonts.css">
     <link href="assets/css/theme.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/b64e399e87.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -84,29 +109,51 @@
     <!-- ===============================================-->
     <main class="main" id="top">
       <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 d-block shadow"
-      data-navbar-on-scroll="data-navbar-on-scroll">
-      <div class="container"><a class="navbar-brand" href="index.html">OnCall Travel</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-              aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon">
-              </span></button>
-          <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
-              <ul class="navbar-nav ms-auto pt-2 pt-lg-0 font-base align-items-lg-center align-items-start">
-                  <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page"
-                          href="index.html">Home</a></li>
-                  <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page"
-                          href="about.html">About</a></li>
-                  <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page"
-                          href="service.html">Services</a></li>
-                  <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page"
-                          href="blog.html">Blog</a></li>
-                  <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page"
-                          href="contact.html">Contact</a></li>
-
-              </ul>
+            data-navbar-on-scroll="data-navbar-on-scroll">
+            <div class="container"><a class="navbar-brand" href="index.html">OnCall Travel</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                  aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon">
+                  </span></button>
+              <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
+                  <ul class="navbar-nav ms-auto pt-2 pt-lg-0 font-base align-items-lg-center align-items-start">
+                      <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page"
+                              href="index.html">Home</a></li>
+                              <li class="nav-item px-3 px-xl-4 dropdown"><a class="nav-link fw-medium dropbtn" aria-current="page"
+                                href="#">Vehicles</a>
+                                <div class="dropdown-content">
+                                  <a href="allvehicle.html">View All Vehicles</a>
+                                  <a href="scorpio.html">View Scorpios</a>
+                                  <a href="volvo.html">View Volvo</a>
+                                  <a href="bus.html">View Deluxe Bus</a>
+                                  
+                                </div>
+                          </li>
+                      <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page"
+                              href="about.html">About</a></li>
+                      <li class="nav-item px-3 px-xl-4 dropdown"><a class="nav-link fw-medium dropbtn" aria-current="page"
+                              href="service.html">Services</a>
+                              <div class="dropdown-content">
+                                <a href="wedding-car.html">Wedding Rental</a>
+                                <a href="airport.html">Airport Drop/Pickup</a>
+                                <a href="corporate.html">Corporate Vehicle Rental</a>
+                                <a href="within-city.html">Within city</a>
+                                <a href="outstation-travel.html">Outstation Travel</a>
+                                <a href="customize-tour.html">Custmized Travel Vehicle</a>
+                              </div>
+                        </li>
+                      <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page"
+                              href="blog.html">Blog</a></li>
+                      <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page"
+                              href="contact.html">Contact</a></li>
+    
+                  </ul>
+                  <a class="nav-link fw-medium" href="login.html" style="margin-left: auto; padding-left: 100px;">
+                    <i class="fas fa-user fa-lg"></i>
+                  </a>
+              </div>
           </div>
-      </div>
-  </nav>
+        </nav>
 
 <!-- Add JavaScript to set active class -->
 <script>

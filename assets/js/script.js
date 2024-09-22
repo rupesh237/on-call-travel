@@ -1493,4 +1493,73 @@ $document.ready(function () {
 		new WOW().init();
 	}
 
+	let carousel = document.querySelector('.rupesh-carousel');
+let carouselItems = Array.from(document.querySelectorAll('.rupesh-carousel-item'));
+let itemWidth = carouselItems[0].offsetWidth + 20; // Includes margin
+let numVisibleItems = 3; // Only 3 items visible at a time
+let totalItems = carouselItems.length;
+let index = 0;
+let isSliding = false;
+
+// Clone the first few items to the end of the carousel for smooth transition
+carouselItems.forEach(item => {
+    const clone = item.cloneNode(true);
+    carousel.appendChild(clone);
+});
+
+// Update the list of items and attach click events after cloning
+function updateCarouselItems() {
+    carouselItems = Array.from(document.querySelectorAll('.rupesh-carousel-item'));
+    carouselItems.forEach(item => {
+        item.addEventListener('click', () => {
+            openImage(item.src); // Fixing the image click event to work properly
+        });
+    });
+}
+updateCarouselItems();
+
+function startCarousel() {
+    setInterval(() => {
+        if (!isSliding) {
+            slide();
+        }
+    }, 2000); // Adjust the interval speed here
+}
+
+function slide() {
+    isSliding = true;
+    index++;
+
+    // Slide the carousel to the next item
+    carousel.style.transition = "transform 1s ease-in-out";
+    carousel.style.transform = `translateX(-${itemWidth * index}px)`;
+
+    // When reaching the cloned elements, reset the position to the original items
+    setTimeout(() => {
+        if (index >= totalItems) {
+            carousel.style.transition = "none"; // Disable transition for the reset
+            carousel.style.transform = `translateX(0)`; // Jump back to the original position
+            index = 0;
+        }
+        isSliding = false;
+    }, 1000); // Match the duration of the sliding transition
+}
+
+startCarousel();
+
+// Image modal handling
+let modal = document.getElementById("imageModal");
+let fullImage = document.getElementById("fullImage");
+
+function openImage(src) {
+    modal.style.display = "block";
+    fullImage.src = src;
+}
+
+// Close the modal when clicking the close button
+document.querySelector('.close').onclick = function() {
+    modal.style.display = "none";
+};
+
+
 });

@@ -5279,7 +5279,7 @@ textarea.form-input.form-input-lg {
 
 .form-request-modern {
   max-width: 566px;
-  background-color: rgba(247, 247, 247, 0.4);
+  background-color: rgba(154, 141, 141, 0.6);
 }
 .form-request-modern input::placeholder{
   color: #1092ad;
@@ -20336,4 +20336,92 @@ html[dir="rtl"] .lg-css3.lg-slide.lg-use-css3 .lg-item.lg-current {
 
 
 
+.rupesh-carousel-container {
+  width: 100%;
+  max-width: 1000px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rupesh-carousel {
+  display: flex;
+  transition: transform 1s ease-in-out;
+}
+
+.rupesh-carousel-item {
+  min-width: 300px;
+  height: 200px;
+  margin: 0 10px;
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.rupesh-carousel-item:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+/* Style for Single Image Centering */
+.single-image {
+  justify-content: center; /* Center the single image */
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 60%;
+  height: 100%;
+  max-width: 700px;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+}
+
+/* Responsive Adjustments */
+@media only screen and (max-width: 768px) {
+  .rupesh-carousel-item {
+      min-width: 200px;
+      height: 150px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .rupesh-carousel-item {
+      min-width: 150px;
+      height: 100px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .modal-content {
+      width: 90%;
+  }
+}
 
