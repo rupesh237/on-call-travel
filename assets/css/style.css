@@ -16218,6 +16218,7 @@ html.tablet .ui-to-top {
 }
 
 .swiper-pagination-bullet-active {
+  display: none;
   background: #0d5c7e;
 }
 

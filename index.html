@@ -178,14 +178,14 @@
                 <div class="swiper-wrapper">
                   <div
                     class="swiper-slide"
-                    data-slide-bg="./images/ONCALL.gif"
+                    data-slide-bg="./images/swiper/oncalll.gif"
                   >
                     <div class="swiper-slide-caption">
                       <div class="container container-bigger swiper-main-section">
                         <div
                           class="row row-fix justify-content-sm-center justify-content-md-start"
                         >
-                          <div class="col-md-6 col-lg-5 col-xl-4 col-xxl-5">
+                          <div class="col-md-6 col-lg-5 col-xl-4 col-xxl-5" style="opacity: 0%;">
                             <h3>Uncover Nepal's Hidden Treasures</h3>
                             <div class="divider divider-decorate"></div>
                             <p class="text-spacing-sm">
@@ -496,205 +496,156 @@
       <!-- ============================================-->
       <!-- <section> begin ============================-->
       <section class="pt-5" id="destination">
-
         <div class="container">
-          <div class="position-absolute start-100 bottom-0 translate-middle-x d-none d-xl-block ms-xl-n4"><img src="assets/img/dest/shape.svg" alt="destination" /></div>
+          <div
+            class="position-absolute start-100 bottom-0 translate-middle-x d-none d-xl-block ms-xl-n4"
+          >
+            <img src="assets/img/dest/shape.svg" alt="destination" />
+          </div>
           <div class="mb-7 text-center">
-            <h5 class="text-secondary">Top Selling </h5>
-            <h3 class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize">Top Destinations</h3>
+            <h5 class="text-secondary">Hot Customer Choices</h5>
+            <h3
+              class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize"
+            >
+              Top vehicles
+            </h3>
           </div>
-          <div class="row">
-            <div class="col-md-4 mb-4">
-              <div class="card overflow-hidden shadow"> <img class="card-img-top" src="assets/img/dest/dest1.jpg" alt="Rome, Italty" />
-                <div class="card-body py-4 px-3">
-                  <div class="d-flex flex-column flex-lg-row justify-content-between mb-3">
-                    <h4 class="text-secondary fw-medium"><a class="link-900 text-decoration-none stretched-link" href="#!">Bardiya National Park</a></h4><span class="fs-1 fw-medium">$500</span>
-                  </div>
-                  <div class="d-flex align-items-center"> <img src="assets/img/dest/navigation.svg" style="margin-right: 14px" width="20" alt="navigation" /><span class="fs-0 fw-medium">10 Days Trip</span></div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 mb-4">
-              <div class="card overflow-hidden shadow"> <img class="card-img-top" src="assets/img/dest/dest2.jpg" alt="London, UK" />
-                <div class="card-body py-4 px-3">
-                  <div class="d-flex flex-column flex-lg-row justify-content-between mb-3">
-                    <h4 class="text-secondary fw-medium"><a class="link-900 text-decoration-none stretched-link" href="#!">Kali gandaki Rafting</a></h4><span class="fs-1 fw-medium">$420</span>
-                  </div>
-                  <div class="d-flex align-items-center"> <img src="assets/img/dest/navigation.svg" style="margin-right: 14px" width="20" alt="navigation" /><span class="fs-0 fw-medium">2 Days Trip</span></div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 mb-4">
-              <div class="card overflow-hidden shadow"> <img class="card-img-top" src="assets/img/dest/dest3.jpg" alt="Full Europe" />
-                <div class="card-body py-4 px-3">
-                  <div class="d-flex flex-column flex-lg-row justify-content-between mb-3">
-                    <h4 class="text-secondary fw-medium"><a class="link-900 text-decoration-none stretched-link" href="#!">Rara lake</a></h4><span class="fs-1 fw-medium">$200</span>
-                  </div>
-                  <div class="d-flex align-items-center"> <img src="assets/img/dest/navigation.svg" style="margin-right: 14px" width="20" alt="navigation" /><span class="fs-0 fw-medium">7 Days Trip</span></div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 mb-4">
-              <div class="card overflow-hidden shadow"> <img class="card-img-top" src="assets/img/dest/dest4.jpg" alt="Full Europe" />
-                <div class="card-body py-4 px-3">
-                  <div class="d-flex flex-column flex-lg-row justify-content-between mb-3">
-                    <h4 class="text-secondary fw-medium"><a class="link-900 text-decoration-none stretched-link" href="#!">Fewa lake</a></h4><span class="fs-1 fw-medium">$300</span>
-                  </div>
-                  <div class="d-flex align-items-center"> <img src="assets/img/dest/navigation.svg" style="margin-right: 14px" width="20" alt="navigation" /><span class="fs-0 fw-medium">3 Days Trip</span></div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 mb-4">
-              <div class="card overflow-hidden shadow"> <img class="card-img-top" src="assets/img/dest/dest5.jpg" alt="Full Europe" />
-                <div class="card-body py-4 px-3">
-                  <div class="d-flex flex-column flex-lg-row justify-content-between mb-3">
-                    <h4 class="text-secondary fw-medium"><a class="link-900 text-decoration-none stretched-link" href="#!">Everest Base Camp</a></h4><span class="fs-1 fw-medium">$2000</span>
-                  </div>
-                  <div class="d-flex align-items-center"> <img src="assets/img/dest/navigation.svg" style="margin-right: 14px" width="20" alt="navigation" /><span class="fs-0 fw-medium">14 Days Trip</span></div>
-                </div>
-              </div>
-            </div>
+          <div class="row" id="vehicle-container">
+            <!-- Dynamically generated cards will appear here -->
           </div>
-        </div><!-- end of .container-->
+        </div>
 
+        <!-- end of .container-->
       </section>
       <!-- <section> close ============================-->
       <!-- ============================================-->
 
-        <section class="section section-lg novi-background bg-gray-lighter bg-cover bg-default text-center">
-          <div class="container-wide mb-5">
-            <div class="row row-50">
-              <div class="col-sm-12">
-                <h3>Latest Blogs</h3>
-                <div class="divider divider-decorate"></div>
-                <!-- Owl Carousel-->
-                <div
-                  class="owl-carousel owl-carousel-team owl-carousel-inset"
-                  data-items="1"
-                  data-md-items="2"
-                  data-xl-items="3"
-                  data-stage-padding="15"
-                  data-loop="true"
-                  data-margin="30"
-                  data-mouse-drag="false"
-                  data-dots="true"
-                  data-autoplay="true"
-                >
-                  <article class="post-blog">
-                    <a class="post-blog-image" href="#"
-                      ><img
-                        src="assets/img/blog/img5.jpg"
-                        alt="blog image"
-                    /></a>
-                    <div class="post-blog-caption">
-                      <div class="post-blog-caption-header">
-                        <ul class="post-blog-tags">
-                          <li><a class="button-tags" href="#">Mountains</a></li>
-                        </ul>
-                        <ul class="post-blog-meta">
-                          <li><span>by</span>&nbsp;<a href="#">Rupesh</a></li>
-                        </ul>
-                      </div>
-                      <div class="post-blog-caption-body">
-                        <h5>
-                          <a class="post-blog-title" href="#"
-                            >Top 10 Mountains to Look at: Exclusive Rating by
-                            mounatainer Travel Experts</a
-                          >
-                        </h5>
-                      </div>
-                      <div class="post-blog-caption-footer">
-                        <time datetime="2019">Feb 27, 2019 at 6:53 pm</time
-                        ><a class="post-comment" href="#"
-                          ><span
-                            class="icon novi-icon icon-md-middle icon-gray-1 mdi mdi-comment"
-                          ></span
-                          ><span>12</span></a
-                        >
-                      </div>
+      <section
+        class="section section-lg novi-background bg-gray-lighter bg-cover bg-default text-center"
+      >
+        <div class="container-wide mb-5">
+          <div class="row row-50">
+            <div class="col-sm-12">
+              <h3>Latest Blogs</h3>
+              <div class="divider divider-decorate"></div>
+              <!-- Owl Carousel-->
+              <div
+                class="owl-carousel owl-carousel-team owl-carousel-inset"
+                data-items="1"
+                data-md-items="2"
+                data-xl-items="3"
+                data-stage-padding="15"
+                data-loop="true"
+                data-margin="30"
+                data-mouse-drag="false"
+                data-dots="true"
+                data-autoplay="true"
+              >
+                <article class="post-blog">
+                  <a class="post-blog-image" href="#"
+                    ><img src="assets/img/blog/blog1.jpg" alt="blog image"
+                  /></a>
+                  <div class="post-blog-caption">
+                    <div class="post-blog-caption-header">
+                      <ul class="post-blog-tags">
+                        <li><a class="button-tags" href="#">Mountains</a></li>
+                      </ul>
+                      <ul class="post-blog-meta">
+                        <li><span>by</span>&nbsp;<a href="#">Rupesh</a></li>
+                      </ul>
                     </div>
-                  </article>
-                  <article class="post-blog">
-                    <a class="post-blog-image" href="#"
-                      ><img
-                        src="assets/img/blog/img10.jpg"
-                        alt="blog image"
-                    /></a>
-                    <div class="post-blog-caption">
-                      <div class="post-blog-caption-header">
-                        <ul class="post-blog-tags">
-                          <li><a class="button-tags" href="#">Tips</a></li>
-                        </ul>
-                        <ul class="post-blog-meta">
-                          <li><span>by</span>&nbsp;<a href="#">Heera</a></li>
-                        </ul>
-                      </div>
-                      <div class="post-blog-caption-body">
-                        <h5>
-                          <a class="post-blog-title" href="#"
-                            >How to Plan Your Vacation in Advance and Why It’s
-                            Beneficial</a
-                          >
-                        </h5>
-                      </div>
-                      <div class="post-blog-caption-footer">
-                        <time datetime="2019">Feb 27, 2019 at 6:53 pm</time
-                        ><a class="post-comment" href="#"
-                          ><span
-                            class="icon novi-icon icon-md-middle icon-gray-1 mdi mdi-comment"
-                          ></span
-                          ><span>12</span></a
+                    <div class="post-blog-caption-body">
+                      <h5>
+                        <a class="post-blog-title" href="#"
+                          >Top 10 places you must not miss while traveling to Mustang</a
                         >
-                      </div>
+                      </h5>
                     </div>
-                  </article>
-                  <article class="post-blog">
-                    <a class="post-blog-image" href="#"
-                      ><img
-                        src="assets/img/blog/img11.jpg"
-                        alt="blog image"
-                    /></a>
-                    <div class="post-blog-caption">
-                      <div class="post-blog-caption-header">
-                        <ul class="post-blog-tags">
-                          <li><a class="button-tags" href="#">Traveling</a></li>
-                        </ul>
-                        <ul class="post-blog-meta">
-                          <li><span>by</span>&nbsp;<a href="#">Sujeet</a></li>
-                        </ul>
-                      </div>
-                      <div class="post-blog-caption-body">
-                        <h5>
-                          <a class="post-blog-title" href="#"
-                            >Your Personal Guide to 5 Best Places to Visit on
-                            Earth</a
-                          >
-                        </h5>
-                      </div>
-                      <div class="post-blog-caption-footer">
-                        <time datetime="2019">Feb 27, 2019 at 6:53 pm</time
-                        ><a class="post-comment" href="#"
-                          ><span
-                            class="icon novi-icon icon-md-middle icon-gray-1 mdi mdi-comment"
-                          ></span
-                          ><span>12</span></a
+                    <div class="post-blog-caption-footer">
+                      <time datetime="2019">Feb 27, 2019 at 6:53 pm</time
+                      ><a class="post-comment" href="#"
+                        ><span
+                          class="icon novi-icon icon-md-middle icon-gray-1 mdi mdi-comment"
+                        ></span
+                        ><span>12</span></a
+                      >
+                    </div>
+                  </div>
+                </article>
+                <article class="post-blog">
+                  <a class="post-blog-image" href="#"
+                    ><img src="assets/img/blog/blog2.jpg" alt="blog image"
+                  /></a>
+                  <div class="post-blog-caption">
+                    <div class="post-blog-caption-header">
+                      <ul class="post-blog-tags">
+                        <li><a class="button-tags" href="#">Tips</a></li>
+                      </ul>
+                      <ul class="post-blog-meta">
+                        <li><span>by</span>&nbsp;<a href="#">Heera</a></li>
+                      </ul>
+                    </div>
+                    <div class="post-blog-caption-body">
+                      <h5>
+                        <a class="post-blog-title" href="#"
+                          >The most amazing features of new BYD ATTO 3</a
                         >
-                      </div>
+                      </h5>
                     </div>
-                  </article>
-                </div>
-              </div>
-              <div class="col-12">
-                <a
-                  class="button button-secondary button-nina button-offset-lg"
-                  href="#"
-                  >view all blog posts</a
-                >
+                    <div class="post-blog-caption-footer">
+                      <time datetime="2019">Feb 27, 2020 at 8:20 pm</time
+                      ><a class="post-comment" href="#"
+                        ><span
+                          class="icon novi-icon icon-md-middle icon-gray-1 mdi mdi-comment"
+                        ></span
+                        ><span>12</span></a
+                      >
+                    </div>
+                  </div>
+                </article>
+                <article class="post-blog">
+                  <a class="post-blog-image" href="#"
+                    ><img src="assets/img/blog/blog3.jpg" alt="blog image"
+                  /></a>
+                  <div class="post-blog-caption">
+                    <div class="post-blog-caption-header">
+                      <ul class="post-blog-tags">
+                        <li><a class="button-tags" href="#">Traveling</a></li>
+                      </ul>
+                      <ul class="post-blog-meta">
+                        <li><span>by</span>&nbsp;<a href="#">Sujeet</a></li>
+                      </ul>
+                    </div>
+                    <div class="post-blog-caption-body">
+                      <h5>
+                        <a class="post-blog-title" href="#"
+                          >Your Personal Guide to 5 Best Places in Nepal</a
+                        >
+                      </h5>
+                    </div>
+                    <div class="post-blog-caption-footer">
+                      <time datetime="2019">Feb 27, 2019 at 6:53 pm</time
+                      ><a class="post-comment" href="#"
+                        ><span
+                          class="icon novi-icon icon-md-middle icon-gray-1 mdi mdi-comment"
+                        ></span
+                        ><span>12</span></a
+                      >
+                    </div>
+                  </div>
+                </article>
               </div>
             </div>
+            <div class="col-12">
+              <a
+                class="button button-secondary button-nina button-offset-lg"
+                href="#"
+                >view all blog posts</a
+              >
+            </div>
           </div>
-        </section>
-
+        </div>
+      </section>
 
       <!-- ============================================-->
       <!-- <section> begin ============================-->
@@ -913,7 +864,7 @@
                   </div>
                 </div>
               </div>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28267.526643536497!2d85.31771703633204!3d27.672766926921668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19014f5fca8d%3A0xcd01c32df66bee0e!2sOncall%20Tours%20%26%20Travels%20Pvt.%20Ltd.!5e0!3m2!1sen!2snp!4v1726468394902!5m2!1sen!2snp" width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28267.526643536497!2d85.31771703633204!3d27.672766926921668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19014f5fca8d%3A0xcd01c32df66bee0e!2sOncall%20Tours%20%26%20Travels%20Pvt.%20Ltd.!5e0!3m2!1sen!2snp!4v1726468394902!5m2!1sen!2snp" width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
           <!-- Second Column: Contact Form -->
@@ -1226,88 +1177,159 @@
       });
     </script>
 
-<!--JS for Booking form-->
+       <!--JS for Booking form-->
+    <script>
+      const form1 = document.getElementById("bookingForm");
+      const webAppUrl1 =
+        "https://script.google.com/macros/s/AKfycbyCsg9649o1hlULQvcPCcyieueXpK7R9eErLoP76KWnlTT22R40_4CS6m--FC63hk1S/exec"; // Replace with your actual Web App URL
+
+      form1.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const formData = new FormData(form1); // Use form1 here
+        formData.append("action", "submit");
+        formData.append("sheet", "Bookings"); // Specify that we're submitting to Bookings
+
+        fetch(webAppUrl1, {
+          method: "POST",
+          body: formData,
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            if (data.status === "success") {
+              alert("Booking Successful");
+              form1.reset(); // Use form1 to reset the form
+            }
+          })
+          .catch((error) => console.error("Error:", error));
+      });
+    </script>
+
+    <!--JS for Contact form-->
+    <script>
+      const form2 = document.getElementById("contactForm");
+      const webAppUrl2 =
+        "https://script.google.com/macros/s/AKfycbyWvVcGXL7nsII1CQyVp_ZJlHukqvsw9GoZ49DeIklFe2deC26USozqw-bfNpBnftnR/exec"; // Replace with your actual Web App URL
+
+      form2.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const formData = new FormData(form2); // Use form2 here
+        formData.append("action", "submit");
+        formData.append("sheet", "Messages"); // Specify that we're submitting to Messages
+
+        fetch(webAppUrl2, {
+          method: "POST",
+          body: formData,
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            if (data.status === "success") {
+              alert("Message Sent");
+              form2.reset(); // Use form2 to reset the form
+            }
+          })
+          .catch((error) => console.error("Error:", error));
+      });
+    </script>
+
+    <!--JS for Newsletter Subscription-->
+    <script>
+      const form3 = document.getElementById("newsletterForm");
+      const webAppUrl3 =
+        "https://script.google.com/macros/s/AKfycbwG_yJEJsJsG_7j9upLlvaxaOpwHcFfu4MJ6N_RHOL2Afn4-g34QkGzcO27KF0zWjuSWw/exec"; // Replace with your actual Web App URL
+
+      form3.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const formData = new FormData(form3); // Use form3 here
+        formData.append("action", "submit");
+        formData.append("sheet", "Newsletter"); // Specify that we're submitting to Newsletter
+
+        fetch(webAppUrl3, {
+          method: "POST",
+          body: formData,
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            if (data.status === "success") {
+              alert("Subscription Added");
+              form3.reset(); // Use form to reset the form
+            }
+          })
+          .catch((error) => console.error("Error:", error));
+      });
+    </script>
+
+
+<!--JS for Vehicles Section-->
 <script>
-  const form1 = document.getElementById('bookingForm');
-  const webAppUrl1 = 'https://script.google.com/macros/s/AKfycbyCsg9649o1hlULQvcPCcyieueXpK7R9eErLoP76KWnlTT22R40_4CS6m--FC63hk1S/exec';  // Replace with your actual Web App URL
+  // Fetch Vehicles data from Google Sheets
+  const vehicleContainer = document.getElementById('vehicle-container'); // Target the specific container using its ID
+  const webAppUrl = 'https://script.google.com/macros/s/AKfycbxtHP7oYbOvWQpuFpJBRaLX5J8TIpNeBdb15BxnnP7K1G0PUkdTFXHzuvnFBaBaTyev/exec';  // Replace with your actual Web App URL
 
-  form1.addEventListener('submit', function (e) {
-    e.preventDefault();
+  function fetchAllData() {
+    const fetchData = new FormData();
+    fetchData.append('action', 'fetch');  // Action for fetching data from Google Sheets
 
-    const formData = new FormData(form1);  // Use form1 here
-    formData.append('action', 'submit');
-    formData.append('sheet', 'Bookings');  // Specify that we're submitting to Bookings
-
-    fetch(webAppUrl1, {
+    fetch(webAppUrl, {
       method: 'POST',
-      body: formData
+      body: fetchData
     })
     .then(response => response.json())
     .then(data => {
       if (data.status === 'success') {
-        alert('Booking Successful');
-        form1.reset();  // Use form1 to reset the form
+        displayVehicles(data.data);  // Call function to display vehicles
       }
     })
     .catch(error => console.error('Error:', error));
-  });
-</script>
+  }
 
+  // Function to display vehicles in cards
+  function displayVehicles(vehicles) {
+    vehicleContainer.innerHTML = ''; // Clear existing cards in the container
 
+    vehicles.forEach((vehicle) => {
+      const card = document.createElement('div');
+      card.classList.add('col-md-4', 'mb-4');  // Matching your Bootstrap column structure
 
-<!--JS for Contact form-->
-<script>
-  const form2 = document.getElementById('contactForm');
-  const webAppUrl2 = 'https://script.google.com/macros/s/AKfycbyWvVcGXL7nsII1CQyVp_ZJlHukqvsw9GoZ49DeIklFe2deC26USozqw-bfNpBnftnR/exec';  // Replace with your actual Web App URL
+      // Create the card HTML, matching your structure
+      card.innerHTML = `
+        <div class="card overflow-hidden shadow">
+          <img
+            class="card-img-top"
+            src="${vehicle.imageUrl}"  // Image URL from vehicle data
+            alt="${vehicle.name}"       // Vehicle name for alt text
+          />
+          <div class="card-body py-4 px-3">
+            <div class="d-flex flex-column flex-lg-row justify-content-between mb-3">
+              <h4 class="text-secondary fw-medium">
+                <a class="link-900 text-decoration-none stretched-link">
+                  ${vehicle.name}   <!-- Vehicle name -->
+                </a>
+              </h4>
+              <span class="fs-1 fw-medium">${vehicle.seater} seater</span>  <!-- Vehicle seater -->
+            </div>
+            <div class="d-flex align-items-center">
+              <img
+                src="assets/img/dest/navigation.svg"
+                style="margin-right: 14px"
+                width="20"
+                alt="navigation"
+              />
+              <span class="fs-0 fw-medium">Rs ${vehicle.price} per day</span>  <!-- Vehicle price -->
+            </div>
+          </div>
+        </div>
+      `;
 
-  form2.addEventListener('submit', function (e) {
-    e.preventDefault();
+      // Append the card to the vehicle container
+      vehicleContainer.appendChild(card);
+    });
+  }
 
-    const formData = new FormData(form2);  // Use form2 here
-    formData.append('action', 'submit');
-    formData.append('sheet', 'Messages');  // Specify that we're submitting to Messages
-
-    fetch(webAppUrl2, {
-      method: 'POST',
-      body: formData
-    })
-    .then(response => response.json())
-    .then(data => {
-      if (data.status === 'success') {
-        alert('Message Sent');
-        form2.reset();  // Use form2 to reset the form
-      }
-    })
-    .catch(error => console.error('Error:', error));
-  });
-</script>
-
-
-<!--JS for Newsletter Subscription-->
-  <script>
-  const form3 = document.getElementById('newsletterForm');
-  const webAppUrl3 = 'https://script.google.com/macros/s/AKfycbwG_yJEJsJsG_7j9upLlvaxaOpwHcFfu4MJ6N_RHOL2Afn4-g34QkGzcO27KF0zWjuSWw/exec';  // Replace with your actual Web App URL
-
-  form3.addEventListener('submit', function (e) {
-    e.preventDefault();
-
-    const formData = new FormData(form3);  // Use form3 here
-    formData.append('action', 'submit');
-    formData.append('sheet', 'Newsletter');  // Specify that we're submitting to Newsletter
-
-    fetch(webAppUrl3, {
-      method: 'POST',
-      body: formData
-    })
-    .then(response => response.json())
-    .then(data => {
-      if (data.status === 'success') {
-        alert('Subscription Added');
-        form3.reset();  // Use form to reset the form
-      }
-    })
-    .catch(error => console.error('Error:', error));
-  });
+  // Load all vehicles when the page loads
+  window.onload = fetchAllData;
 </script>
 
 
