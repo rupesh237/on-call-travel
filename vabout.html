@@ -64,6 +64,9 @@
     /* .dropdown-content a:hover {
     background-color: #555;
 } */
+.slider-wrapper {
+  background-color: rgb(240, 233, 233);
+}
   </style>
 
 </head>
@@ -415,60 +418,110 @@
 
       </div>
     </div>
-
-    <div class="wheel-bg2">
-      <div class="container padd-lr0">
-        <div class="row">
-          <div class="col-xs-12 ex">
-            <div class="wheel-header text-center marg-lg-t20 marg-sm-t50 marg-lg-b90">
-              <h5>Memebers </h5>
-              <h3>Our Excellent <span>Team</span></h3>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-4">
-            <div class="wheel-team text-center marg-sm-b50">
-              <div class="wheel-team-logo"><img src="images/teams/director.png" alt=""></div>
-              <div class="wheel-team-info ">
-                <h5>Mr. Jhamak Bhandari</h5>
-                <span> Managing Director</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-4">
-            <div class="wheel-team text-center marg-sm-b50">
-              <div class="wheel-team-logo"><img src="images/teams/ceo.jpeg" alt=""></div>
-              <div class="wheel-team-info">
-                <h5>Mr. Sujan Bhandari</h5>
-                <span>Chief Executive Officer</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-4">
-            <div class="wheel-team text-center marg-sm-b50">
-              <div class="wheel-team-logo"><img src="images/teams/Manager.png" alt=""></div>
-              <div class="wheel-team-info ">
-                <h5>Mrs. Roshika Karki</h5>
-                <span>Executive Manager</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-12">
-            <div class="wheel-team text-center marg-sm-b50">
-              <div class="wheel-team-logo"><img src="images/teams/accountant.jpeg" alt=""></div>
-              <div class="wheel-team-info">
-                <h5>Mr. Surya Prasad Joshi</h5>
-                <span>Accountant</span>
-              </div>
-            </div>
-          </div>
-
-
-
+<!-- team members -->
+<div class="wheel-bg2">
+  <div class="container padd-lr0">
+    <div class="row">
+      <div class="col-xs-12 ex">
+        <div class="wheel-header text-center marg-lg-t20 marg-sm-t50 marg-lg-b90">
+          <h5>Members</h5>
+          <h3>Our Excellent <span>Team</span></h3>
         </div>
       </div>
     </div>
+
+    <!-- Swiper -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="wheel-team text-center marg-sm-b50">
+            <div class="wheel-team-logo">
+              <img src="images/teams/director.png" alt="">
+            </div>
+            <div class="wheel-team-info">
+              <h5>Mr. Jhamak Bhandari</h5>
+              <span>Managing Director</span>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="wheel-team text-center marg-sm-b50">
+            <div class="wheel-team-logo">
+              <img src="images/teams/ceo.jpeg" alt="">
+            </div>
+            <div class="wheel-team-info">
+              <h5>Mr. Sujan Bhandari</h5>
+              <span>Chief Executive Officer</span>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="wheel-team text-center marg-sm-b50">
+            <div class="wheel-team-logo">
+              <img src="images/teams/Manager.png" alt="">
+            </div>
+            <div class="wheel-team-info">
+              <h5>Mrs. Roshika Karki</h5>
+              <span>Executive Manager</span>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="wheel-team text-center marg-sm-b50">
+            <div class="wheel-team-logo">
+              <img src="images/teams/accountant.jpeg" alt="">
+            </div>
+            <div class="wheel-team-info">
+              <h5>Mr. Surya Prasad Joshi</h5>
+              <span>Accountant</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add Pagination (optional) -->
+      <div class="swiper-pagination"></div>
+
+      <!-- Add Navigation (optional) -->
+      <!-- <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div> -->
+    </div>
+  </div>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 3, // Default for smaller screens (e.g. mobile)
+      spaceBetween: 10, // Space between slides
+      loop: true, // Enable continuous loop mode
+      autoplay: {
+        delay: 5000, // Delay between slides in milliseconds
+        disableOnInteraction: false, // Keep autoplay running after interaction
+      },
+      speed: 3000, // Transition speed between slides in milliseconds
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true, // Enable pagination dots to be clickable
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        // When the screen is 1024px or larger
+        780: {
+          slidesPerView: 2, // Show 3 slides on large screens
+          spaceBetween: 10, // Adjust space between slides for large screens
+        }
+      }
+    });
+  });
+</script>
+
+
+
+<!-- team members -->
+    
     <!-- /////////////////////////////// -->
     <!--Contact Section Content-->
     <section class="contact-section section-lg bg-light text-center">
